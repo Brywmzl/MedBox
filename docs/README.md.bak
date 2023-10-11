@@ -1,0 +1,16 @@
+---
+home: true
+heroImage: /img/icon.png
+heroText: MedBox
+tagline: Rhino Utility Plugin & Grasshopper Component
+actionText: Start
+actionLink: /guide/
+features:
+- title: 哈哈哈
+  details: 遥遥领先遥遥领先遥遥领先遥遥领先
+- title: 哈哈哈
+  details: 遥遥领先遥遥领先遥遥领先遥遥领先
+- title: 哈哈哈
+  details: 遥遥领先遥遥领先遥遥领先遥遥领先
+footer: MIT Licensed | Copyright © 2022-present [MedBox](https://github.com/MedBox)
+---

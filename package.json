@@ -1,0 +1,25 @@
+{
+  "name": "MedBox",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Brywmzl/MedBox.git",
+  "author": "Brywmzl <brywmzl@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^2.0.0-beta.67"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "dev": "vuepress dev docs --temp .temp",
+    "build": "vuepress build docs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "bash deploy.sh"
+  },
+  "dependencies": {
+    "@mdit-vue/plugin-headers": "^1.0.0",
+    "vuepress-theme-reco": "^2.0.0-beta.68",
+    "vuepress-theme-vue": "^1.1.1",
+    "vuepress-theme-yur": "^3.1.11"
+  }
+}
