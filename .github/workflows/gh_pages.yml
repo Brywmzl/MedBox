@@ -10,6 +10,9 @@ jobs:
     permissions:
       pages: write
       id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: Check GitHub Status
         uses: crazy-max/ghaction-github-status@v4
@@ -25,10 +28,10 @@ jobs:
       - name: Build Docs
         run: yarn run docs:build
 
-      - name: Deploy to GitHub Pages
-        uses: crazy-max/ghaction-github-pages@v4
+      - uses: actions/configure-pages@v2
+      - uses: actions/upload-pages-artifact@v1
         with:
-          target_branch: gh-pages
-          build_dir: docs/.vuepress/dist
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          path: docs/.vuepress/dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v2
