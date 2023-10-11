@@ -3,7 +3,7 @@ sidebar: auto
 sidebarDepth: 2
 ---
 
-# MedBoxCommand
+# Readme2
 
 我们认为采用原生的自定义组件至少有以下几点好处：
 
