@@ -1,16 +1,23 @@
 import { defineUserConfig } from 'vuepress'
 import { recoTheme } from 'vuepress-theme-reco'
+import { themeConfig } from './config/index'
 
 export default defineUserConfig({
-  theme: recoTheme({
-    colorMode: 'dark', // dark, light
-    // 自动设置分类
-    autoSetBlogCategories: true,
-    catalogTitle: 'MedBox', // 自定义目录标题
-    primaryColor: '#ff00aa',
-    autoSetSeries: true,
-    series: {
-        '/guide/': [ 'README2' ]
-    }
-  })
+  base: "/MedBox/",
+  locales: {
+    // 键名是该语言所属的子路径
+    // 作为特例，默认语言可以使用 '/' 作为其路径。
+    '/': {
+      lang: 'zh-CN',
+      title: 'MedBox',
+      description: 'Rhino Utility Plugin & Grasshopper Component',
+    },
+    // '/en/': {
+    //   lang: 'en-US',
+    //   title: 'MedBox',
+    //   description: 'Rhino Utility Plugin & Grasshopper Component',
+    // },
+  },
+  theme: recoTheme(themeConfig),
+  // debug: true,
 })
