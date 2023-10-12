@@ -11,7 +11,7 @@ export const themeConfig = {
     '/': {
       selectLanguageText: '选择语言',
       selectLanguageName: '简体中文',
-      lastUpdatedText: '最后更新时间',
+      lastUpdatedText: 'Last Updated',
       navbar: zhConfig.navbar,
       series: zhConfig.series,
       // commentConfig: zhConfig.commentConfig,
@@ -26,18 +26,13 @@ export const themeConfig = {
     //   bulletin: enConfig.bulletin,
     // },
   },
-  logo: '/img/icon.png',
+  // logo: '/logo.png',
   author: 'Brywmzl',
   docsRepo: 'https://github.com/Brywmzl/MedBox',
   docsBranch: 'main',
   docsDir: '/docs',
+  vuePreviewsDir: './docs/.vuepress/vue-previews',
   componentsDir: './docs/.vuepress/components',
-//   algolia: {
-//     appId: '38R2J3MTQC',
-//     apiKey: '583d3caf699630b08a9bc2d12d599701',
-//     indexName: 'v2-vuepress-reco-recoluan',
-//     // inputSelector: '### REPLACE ME ####',
-//     // algoliaOptions: { 'facetFilters': ["lang:$LANG"] },
-//     // debug: false // Set debug to true if you want to inspect the dropdown
-//   },
+  editLink: false,
+  editLinkText: '帮助我们改善此页面！',
 }

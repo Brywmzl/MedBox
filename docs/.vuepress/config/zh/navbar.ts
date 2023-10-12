@@ -1,12 +1,11 @@
 export const navbar = [
-  { text: '首页', link: '/', icon: 'Home'},
-  { text: '指南', link: '/guide/introduce', icon: 'Compass' },
-  {
-    text: '发布',
-    icon: 'SubVolume',
-    children: [
-      { text: '1.0.0', link: 'https://github.com/Brywmzl/MedBox/releases' },
-
-    ],
-  },
+  { text: 'Home', link: '/', icon: 'Home' },
+  { text: 'Guide', link: '/guide/', icon: 'Compass' },
+  { text: 'Releases', link: 'https://github.com/Brywmzl/MedBox/releases', icon: 'SubVolume'},
+  { 
+      text: 'Menu', 
+      children: [
+          { text: 'Github', link: 'https://github.com/Brywmzl/MedBox' }
+      ]
+  }
 ]

@@ -1,16 +1,17 @@
 export const bulletin = {
+  title: 'Bulletin',
   body: [
     {
       type: 'title',
-      content: 'QQ 群',
+      content: 'QQ Group',
     },
     {
       type: 'text',
       content: `
       <ul>
-        <li>QQ群1：1037296104</li>
-        <li>QQ群2：1061561395</li>
-        <li>QQ群3：962687802</li>
+        <li>Group 1：1037296104</li>
+        <li>Group 2：1061561395</li>
+        <li>Group 3：962687802</li>
       </ul>`,
       style: 'font-size: 12px;'
     },
@@ -37,7 +38,7 @@ export const bulletin = {
       type: 'buttongroup',
       children: [
         {
-          text: '打赏',
+          text: 'Donate',
           link: '/docs/others/donate.html'
         }
       ]
