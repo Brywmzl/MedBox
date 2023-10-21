@@ -10,9 +10,10 @@ index: false
 
 ![Alt text](image.png)
 
-**MedBox 目前已有80+公开命令** 
+**MedBox 目前已有80+公开命令**
 
-::: details <HopeIcon icon="fa-solid fa-wave-pulse" /> Analysis（分析类）
+::: details <HopeIcon icon="fa-solid fa-chart-line" /> Analysis（分析类）
+
 - B_Length
 - B_Area
 - B_Volume
@@ -22,6 +23,7 @@ index: false
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-circle-small" /> Point（点类）
+
 - B_ImportPoints
 - B_PointOnCurve
 - B_PushPointOnCurve
@@ -29,16 +31,19 @@ index: false
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-wave-sine" /> Curve（曲线类）
+
 - B_FitArc
 - B_ToPolyline
 - B_Make2D
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-square" /> Surface（曲面类）
+
 - B_ExtendEdge
 :::
 
 ::: details <HopeIcon icon="fa-regular fa-square-quarters" /> Plane（平面类）
+
 - B_AddPlane
 - B_PlaneIntersect
 - B_InsertConstructionPlane
@@ -47,6 +52,7 @@ index: false
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-grip-lines" /> Linear（型材类）
+
 - B_GenTube
 - B_GenTubeByIntersect
 - B_GenTubeByProject
@@ -56,6 +62,7 @@ index: false
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-arrows-left-right-to-line" />  Dimension（标注类）
+
 - B_AddAngularDimensionByNode
 - B_AddAxisNumber
 - B_AddDot
@@ -72,6 +79,7 @@ index: false
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-a" /> Text（文本类）
+
 - B_Text
 - B_AnnotationAndTextDotConver
 - B_FindText
@@ -79,6 +87,7 @@ index: false
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-shapes" /> Object（物件类）
+
 - B_ObjectAttributes
 - B_ObjectChangeColor
 - B_ObjectDrop
@@ -90,6 +99,7 @@ index: false
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-layer-group" /> Layer（图层类）
+
 - B_CopyLayerToClipboard
 - B_ImportLayerFromClipboard
 - B_LayerChangeColor
@@ -100,11 +110,13 @@ index: false
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-draw-square" /> Group（群组类）
+
 - B_GroupByBound
 - B_GroupBySimilarSrf
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-check" /> Selection（选取类）
+
 - B_SelBlock
 - B_SelEdge
 - B_SelLength
@@ -114,6 +126,7 @@ index: false
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-list" /> Multiple（多项类）
+
 - B_SiftSrf
 - B_CullDuplicate
 - B_CullDuplicateCrv
@@ -121,6 +134,7 @@ index: false
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-draw-square" /> Transform（变换类）
+
 - B_Rotate
 - B_Scale
 - B_Project
@@ -132,32 +146,12 @@ index: false
 :::
 
 ::: details <HopeIcon icon="fa-solid fa-hammer" /> Utility（实用类）
+
 - B_ChangeColorTheme
 - B_Start
 - B_SetMacro
 - B_ResetRtf
 :::
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <!--
 

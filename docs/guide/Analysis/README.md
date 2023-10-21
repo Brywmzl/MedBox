@@ -1,6 +1,6 @@
 ---
 title: Analysis（分析类）
-icon: fa-solid fa-wave-pulse
+icon: fa-solid fa-chart-line
 link: true
 collapsible: false
 index: false
