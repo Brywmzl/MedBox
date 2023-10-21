@@ -1,0 +1,37 @@
+name: Deploy static content to Pages
+
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check GitHub Status
+        uses: crazy-max/ghaction-github-status@v4
+        with:
+          overall_threshold: minor
+          pages_threshold: major_outage
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - uses: bahmutov/npm-install@v1
+
+      - name: Build Docs
+        run: yarn run docs:build
+
+      - uses: actions/configure-pages@v2
+      - uses: actions/upload-pages-artifact@v1
+        with:
+          path: docs/.vuepress/dist
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v2
