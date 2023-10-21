@@ -17,8 +17,8 @@ export default hopeTheme({
   // logo: "/logo.svg",
 
   // repo: "Brywmzl/MedBox",
-
-  docsDir: "src",
+  docsRepo: "Brywmzl/MedBox",
+  docsDir: "docs",
 
   // navbar
   navbar,
@@ -41,7 +41,7 @@ export default hopeTheme({
 
   // page meta
   metaLocales: {
-    editLink: false,
+    editLink: "编辑此页",
   },
 
   plugins: {
