@@ -8,12 +8,6 @@ devDependencies:
   '@vuepress/client':
     specifier: 2.0.0-beta.67
     version: 2.0.0-beta.67
-  rollup-plugin-terser:
-    specifier: 7.0.2
-    version: 7.0.2(rollup@2.79.1)
-  sourcemap-codec:
-    specifier: 1.4.8
-    version: 1.4.8
   vue:
     specifier: ^3.3.4
     version: 3.3.4

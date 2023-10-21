@@ -19,14 +19,19 @@ jobs:
         with:
           overall_threshold: minor
           pages_threshold: major_outage
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
       - uses: actions/setup-node@v3
         with:
           node-version: 16
-      - uses: bahmutov/npm-install@v1
+          cache: 'pnpm'
+          cache-dependency-path: pnpm-lock.yaml
+      - run: pnpm install --frozen-lockfile
 
-      - name: Build Docs
-        run: yarn run docs:build
+      - name: Build
+        run: pnpm docs:build
 
       - uses: actions/configure-pages@v2
       - uses: actions/upload-pages-artifact@v1
