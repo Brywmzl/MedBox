@@ -41,7 +41,7 @@ export default hopeTheme({
 
   // page meta
   metaLocales: {
-    editLink: "编辑此页",
+    editLink: false,
   },
 
   plugins: {
@@ -145,8 +145,8 @@ export default hopeTheme({
                 "type": "image/png"
             }
         ],
-        "name": "medbox",
-        "short_name": "medbox",
+        "name": "MedBox",
+        "short_name": "MedBox",
         "theme_color": "#ffffff"
       },
     },
