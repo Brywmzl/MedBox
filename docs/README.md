@@ -1,35 +1,77 @@
 ---
 home: true
-icon: fa-solid fa-house
-title: Home
-heroImage: /logo.svg
+title: MedBox
 heroFullScreen: true
-heroImageStyle:
-  width: 320px
-bgImage: /assets/background/bg.svg
-bgImageStyle:
-  # background-attachment: fixed
-  background-size: full
+layout: BlogHome
 heroText: MedBox
-tagline: MedBox Rhino Utility Plugin & GH Component
+tagline: 基于 Markdown 渲染的静态站点，用更轻的方式展示 Rhino 工具能力
+bgImage: /assets/background/endless-constellation-light.svg
+bgImageDark: /assets/background/endless-constellation-dark.svg
+bgImageStyle:
+  background-attachment: fixed
+  background-position: center
+  background-size: cover
 actions:
-  - text: Guide
+  - text: 立即查看指南
     link: ./guide/
     type: primary
 
-  - text: Releases
+  - text: GitHub Releases
     link: https://github.com/Brywmzl/MedBox/releases
+
+  - text: 源码仓库
+    link: https://github.com/Brywmzl/MedBox
 
 highlights:
 
-  - header: MedBox 中有10+类功能
-    description: 扩展内部开发计划
+  - header: 为什么用 MedBox
+    description: 直接写 Markdown，就能生成结构清晰、可部署到 github.io 的静态页面
+    image: /assets/image/features.svg
+    features:
+
+      - title: Markdown 驱动
+        icon: fa-solid fa-file-lines
+        details: 首页、文档页、分类页都由 Markdown 内容渲染生成，改文案不用碰复杂前端代码
+        link: /guide/
+
+      - title: 一键操作
+        icon: fa-solid fa-wand-magic-sparkles
+        details: 把点选、筛选、命名、标注这些高频动作压缩成更短路径
+        link: /guide/
+
+      - title: 面向生产
+        icon: fa-solid fa-compass-drafting
+        details: 围绕建模、整理、标注、导入导出等真实场景持续扩展
+        link: /guide/
+
+      - title: 学习成本低
+        icon: fa-solid fa-bolt
+        details: 按功能分组浏览，找到对应能力后即可直接进入说明页
+        link: /guide/
+
+  - header: Markdown 如何生成页面
+    description: 现在这个站点本身就是 Markdown 驱动，前台页面由 VuePress 自动渲染
+    image: /assets/image/markdown.svg
+    features:
+
+      - title: 首页即 README
+        icon: fa-solid fa-house
+        details: docs/README.md 里的 Frontmatter 和内容，直接决定首页结构与展示
+        link: /
+
+      - title: 文档即页面
+        icon: fa-solid fa-book-open
+        details: docs/guide 下每个 .md 文件都会生成独立静态页面，天然适合 github.io
+        link: /guide/
+
+      - title: 主题负责样式
+        icon: fa-solid fa-palette
+        details: Markdown 管内容，主题和样式表负责视觉，所以后续继续改版也很方便
+        link: /guide/
+
+  - header: 核心能力
+    description: 按 Rhino 实际工作内容组织，快速定位你需要的模块
     image: /assets/image/medbox-plus.svg
-    # bgImage: /assets/background/translucent-softness-forms-001.jpg
-    # bgImageDark: /assets/background/2-light.svg
-    # bgImageStyle:
-      # background-repeat: repeat
-      # background-size: initial
     features:
 
       - title: Point
@@ -81,153 +123,52 @@ highlights:
         icon: fa-solid fa-hammer
         details: 这里有你意想不到的惊喜
         link: /guide/Utility
-      
-      - title: Macro 
+
+      - title: Macro
         icon: fa-solid fa-keyboard
         details: 提升效率少不了快捷操作
-        link: /guide/Macro 
-      
+        link: /guide/Utility
+
       - title: AirShared
         icon: fa-solid fa-truck-fast
         details: 连接内部服务器可快速分享文档物件
         link: /guide
 
+  - header: 典型使用场景
+    description: 从数据进场到图纸整理，覆盖常见设计与加工辅助流程
+    image: /assets/image/layout.svg
+    features:
+
+      - title: 点位导入
+        icon: fa-solid fa-location-dot
+        details: 导入测量点、处理坐标、快速生成几何参考
+        link: /guide/Point
+
+      - title: 批量标注
+        icon: fa-solid fa-ruler-combined
+        details: 处理长度、角度、圆弧与定位标注，减少重复点击
+        link: /guide/Dimension
+
+      - title: 文本治理
+        icon: fa-solid fa-font
+        details: 查找、替换、批量整理文字与对象名称，降低出图错误
+        link: /guide/Text
+
+      - title: 图层与对象整理
+        icon: fa-solid fa-layer-group
+        details: 快速筛选、分组、归档与统一属性，保持模型结构清晰
+        link: /guide/Layer
+
+      - title: 形体调整
+        icon: fa-solid fa-vector-square
+        details: 投影、拉直、缩放、旋转等变换操作更稳定更高效
+        link: /guide/Transform
+
+      - title: 杂项增强
+        icon: fa-solid fa-screwdriver-wrench
+        details: 通过零散但关键的小工具，补齐日常工作缝隙
+        link: /guide/Utility
+
 copyright: false
 footer: Copyright © 2023 Brywmzl
 ---
-
-<!--
-      - title: Curve
-        icon: bezier-curve
-        details: 装修中...
-        link: /guide/Curve
-
-      - title: Surface
-        icon: square
-        details: 装修中...
-        link: /guide/Surface
-   
-
--->
-
-<!--
-
-- header: 布局
-    description: 一个带有完整无障碍支持的响应式布局。
-    image: /assets/image/layout.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/5-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/5-dark.svg
-    highlights:
-      - title: 布局增强
-        icon: object-group
-        details: 添加路径导航、页脚、改进的导航栏、改进的页面导航等。
-        link: https://theme-hope.vuejs.press/zh/guide/layout/
-
-      - title: 深色模式
-        icon: circle-half-stroke
-        details: 可以自由切换浅色模式与深色模式
-        link: https://theme-hope.vuejs.press/zh/guide/interface/darkmode.html
-
-      - title: 主题色切换
-        icon: palette
-        details: 支持自定义主题色并允许用户在预设的主题颜色之间切换
-        link: https://theme-hope.vuejs.press/zh/guide/interface/theme-color.html
-
-      - title: 幻灯片页面
-        icon: person-chalkboard
-        details: 添加幻灯片页面以显示你喜欢的内容
-        link: https://theme-hope.vuejs.press/zh/guide/layout/slides
-
-      - title: 更多
-        icon: ellipsis
-        details: RTL 布局，打印支持，全局按钮等
-        link: https://theme-hope.vuejs.press/zh/guide/interface/others.html
-
-  - header: 新功能
-    image: /assets/image/features.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/1-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/1-dark.svg
-    features:
-      - title: 浏览量与评论
-        icon: comment-dots
-        details: 配合 Waline 来开启阅读量统计与评论支持
-        link: https://theme-hope.vuejs.press/zh/guide/feature/comment.html
-
-      - title: 文章信息
-        icon: circle-info
-        details: 为你的文章添加作者、写作日期、预计阅读时间、字数统计等信息
-        link: https://theme-hope.vuejs.press/zh/guide/feature/page-info.html
-
-      - title: 文章加密
-        icon: lock
-        details: 你可以为你的特定页面或特定目录进行加密，以便陌生人不能随意访问它们
-        link: https://theme-hope.vuejs.press/zh/guide/feature/encrypt.html
-
-      - title: 搜索支持
-        icon: search
-        details: 支持 docsearch 和基于客户端的搜索
-        link: https://theme-hope.vuejs.press/zh/guide/feature/search.html
-
-      - title: 代码复制
-        icon: copy
-        details: 一键复制代码块中的代码
-        link: https://theme-hope.vuejs.press/zh/guide/feature/copy-code.html
-
-      - title: 图片预览
-        icon: image
-        details: 像相册一样允许你浏览、缩放并分享你的页面图片
-        link: https://theme-hope.vuejs.press/zh/guide/feature/photo-swipe.html
-
-  - header: 博客
-    description: 通过主题创建个人博客
-    image: /assets/image/blog.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/5-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/5-dark.svg
-    highlights:
-      - title: 博客功能
-        icon: blog
-        details: 通过文章的日期、标签和分类展示文章
-        link: https://theme-hope.vuejs.press/zh/guide/blog/intro.html
-
-      - title: 博客主页
-        icon: home
-        details: 全新播客主页
-        link: https://theme-hope.vuejs.press/zh/guide/blog/home.html
-
-      - title: 博主信息
-        icon: home
-        details: 自定义名称、头像、座右铭和社交媒体链接
-        link: https://theme-hope.vuejs.press/zh/guide/blog/blogger.html
-
-      - title: 时间线
-        icon: home
-        details: 在时间线中浏览和通读博文
-        link: https://theme-hope.vuejs.press/zh/guide/blog/timeline.html
-
-  - header: 高级
-    description: 增强站点与用户体验的高级功能
-    image: /assets/image/advanced.svg
-    bgImage: https://theme-hope-assets.vuejs.press/bg/4-light.svg
-    bgImageDark: https://theme-hope-assets.vuejs.press/bg/4-dark.svg
-    highlights:
-      - title: SEO 增强
-        icon: dumbbell
-        details: 将最终生成的网页针对搜索引擎进行优化。
-        link: https://theme-hope.vuejs.press/zh/guide/advanced/seo.html
-
-      - title: Sitemap
-        icon: sitemap
-        details: 自动为你的网站生成 Sitemap
-        link: https://theme-hope.vuejs.press/zh/guide/advanced/sitemap.html
-
-      - title: Feed 支持
-        icon: rss
-        details: 生成你的 Feed，并通知你的用户订阅它
-        link: https://theme-hope.vuejs.press/zh/guide/advanced/feed.html
-
-      - title: PWA 支持
-        icon: mobile-screen
-        details: 让你的网站更像一个 APP
-        link: https://theme-hope.vuejs.press/zh/guide/advanced/pwa.html
-
--->
