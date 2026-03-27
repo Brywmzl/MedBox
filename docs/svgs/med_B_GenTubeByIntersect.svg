@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #68004b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        opacity: .3;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #68004b;
+      }
+
+      .cls-4 {
+        opacity: .6;
+      }
+
+      .cls-5 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <g>
+      <polygon class="cls-3" points="45 30.46 45 66.65 35 60.88 35 24.69 45 30.46"/>
+      <polygon class="cls-3" points="80 52.22 40 75.31 30 69.54 20 63.76 35 55.1 35 60.88 45 66.65 65 55.1 65 43.56 80 52.22"/>
+      <polygon class="cls-2" points="80 52.22 80 63.76 40 86.86 40 75.31 80 52.22"/>
+      <polygon class="cls-3" points="30 69.54 20 75.31 20 63.76 30 69.54"/>
+      <polygon class="cls-4" points="40 75.31 40 86.86 20 75.31 30 69.54 40 75.31"/>
+      <polygon class="cls-3" points="65 18.92 55 24.69 55 13.14 65 18.92"/>
+      <polygon class="cls-3" points="55 13.14 55 24.69 45 30.46 35 24.69 55 13.14"/>
+      <polygon class="cls-2" points="65 18.92 65 55.1 45 66.65 45 30.46 55 24.69 65 18.92"/>
+    </g>
+    <g>
+      <polygon class="cls-1" points="45 30.46 45 66.65 35 60.88 35 24.69 45 30.46"/>
+      <polygon class="cls-1" points="80 52.22 40 75.31 30 69.54 20 63.76 35 55.1 35 60.88 45 66.65 65 55.1 65 43.56 80 52.22"/>
+      <polygon class="cls-1" points="80 52.22 80 63.76 40 86.86 40 75.31 80 52.22"/>
+      <polygon class="cls-1" points="30 69.54 20 75.31 20 63.76 30 69.54"/>
+      <polygon class="cls-1" points="40 75.31 40 86.86 20 75.31 30 69.54 40 75.31"/>
+      <polygon class="cls-1" points="65 18.92 55 24.69 55 13.14 65 18.92"/>
+      <polygon class="cls-1" points="55 13.14 55 24.69 45 30.46 35 24.69 55 13.14"/>
+      <polygon class="cls-1" points="65 18.92 65 55.1 45 66.65 45 30.46 55 24.69 65 18.92"/>
+    </g>
+  </g>
+</svg>

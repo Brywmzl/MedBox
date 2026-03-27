@@ -15,35 +15,35 @@ $font-family: '-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ub
 $font-family-heading: 'Georgia Pro, Crimson, Georgia, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", STHeiti, "Microsoft YaHei", SimSun, sans-serif';
 
 
-$theme-color: #ff00aa;
+$theme-color: #68004b;
 
 $text-color: (
-    light: #202124,
-    dark: #ddd,
+    light: #24121d,
+    dark: #f4d9ea,
 );
 
 // 背景颜色
 $bg-color: (
-  light: #fff,
-  dark: #0d1117,
+  light: #fff8fc,
+  dark: #12010d,
 );
 
 // 标签鼠标经过
 $bg-color-secondary: (
-    light: #eeeeee,
-    dark: #333,
+    light: rgba(104, 0, 75, 0.08),
+    dark: rgba(104, 0, 75, 0.3),
 );
 
 // 按钮鼠标经过
 $bg-color-tertiary: ( 
-    light: #bbbbbb,
-    dark: #555,
+    light: rgba(104, 0, 75, 0.16),
+    dark: rgba(104, 0, 75, 0.6),
 );
 
 // 边界线
 $border-color: (
-  light: #eaecef,
-  dark: #30363d,
+  light: rgba(104, 0, 75, 0.18),
+  dark: rgba(255, 181, 223, 0.18),
 );
 
 // constants

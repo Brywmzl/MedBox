@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .6;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #68004b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g class="cls-1">
+    <polygon class="cls-2" points="26.67 56.74 15 63.47 15 50 26.67 56.74"/>
+    <polygon class="cls-2" points="85 36.53 38.33 63.47 26.67 56.74 15 50 61.67 23.06 85 36.53"/>
+    <polygon class="cls-2" points="85 36.53 85 50 38.33 76.94 38.33 63.47 85 36.53"/>
+    <polygon class="cls-2" points="38.33 63.47 38.33 76.94 15 63.47 26.67 56.74 38.33 63.47"/>
+  </g>
+  <line class="cls-2" x1="38.33" y1="63.47" x2="85" y2="36.53"/>
+</svg>

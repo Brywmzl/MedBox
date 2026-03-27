@@ -1,187 +1,185 @@
 ---
-title: Guide
+title: 命令索引
 icon: fa-solid fa-book
 index: false
+article: false
 ---
 
-# 命令详解 🎉
+# MedBox 命令文档骨架
 
-<!-- emoji: https://www.webfx.com/tools/emoji-cheat-sheet/ -->
+这个页面先作为总入口，你后续只需要继续往各分类目录里补 `.md` 文件即可。
 
-![Alt text](image.png)
+## 使用方式
 
-**MedBox 目前已有80+公开命令**
+- 每个命令建议一个单独的 `.md` 文件
+- 文件名建议直接使用命令名，例如 `B_AddLinearDimension.md`
+- 写好后会自动成为静态页面
+- 左侧侧边栏会按目录结构自动生成
 
-::: details <HopeIcon icon="fa-solid fa-chart-line" /> Analysis（分析类）
+## 推荐的单个命令文档模板
 
-- B_Length
-- B_Area
-- B_Volume
-- B_Weight
-- B_PipeLength
-- B_PlanarHeightTest
-:::
+```md
+---
+title: B_CommandName
+icon: fa-solid fa-screwdriver-wrench
+article: true
+---
 
-::: details <HopeIcon icon="fa-solid fa-circle-small" /> Point（点类）
+# B_CommandName
 
-- B_ImportPoints
-- B_PointOnCurve
-- B_PushPointOnCurve
-- B_ExportLocation
-:::
+## 功能说明
 
-::: details <HopeIcon icon="fa-solid fa-wave-sine" /> Curve（曲线类）
+一句话说明这个命令是做什么的。
 
-- B_FitArc
-- B_ToPolyline
-- B_Make2D
-:::
+## 使用场景
 
-::: details <HopeIcon icon="fa-solid fa-square" /> Surface（曲面类）
+- 场景 1
+- 场景 2
 
-- B_ExtendEdge
-:::
+## 输入
 
-::: details <HopeIcon icon="fa-regular fa-square-quarters" /> Plane（平面类）
+- 输入对象
+- 输入条件
 
-- B_AddPlane
-- B_PlaneIntersect
-- B_InsertConstructionPlane
-- B_PlaneSplit
-- B_PlaneTrim
-:::
+## 输出
 
-::: details <HopeIcon icon="fa-solid fa-grip-lines" /> Linear（型材类）
+- 输出结果
 
-- B_GenTube
-- B_GenTubeByIntersect
-- B_GenTubeByProject
-- B_GetPipeRail
-- B_HatchOutline
-- B_PipeHelper
-:::
+## 操作步骤
 
-::: details <HopeIcon icon="fa-solid fa-arrows-left-right-to-line" />  Dimension（标注类）
+1. 第一步
+2. 第二步
+3. 第三步
 
-- B_AddAngularDimensionByNode
-- B_AddAxisNumber
-- B_AddDot
-- B_AddDotByDistance
-- B_AddDotByLength
-- B_AddDotByLocation
-- B_AddLinearDimensionBy3Pt
-- B_AddLinearDimensionByArc
-- B_AddLinearDimensionByDiagonal
-- B_AddLinearDimensionByInterior
-- B_AddLinearDimensionByNaked
-- B_AddRadialDimension
-- B_Stamp
-:::
+## 注意事项
 
-::: details <HopeIcon icon="fa-solid fa-a" /> Text（文本类）
-
-- B_Text
-- B_AnnotationAndTextDotConver
-- B_FindText
-- B_FindTextFromInsertion
-:::
-
-::: details <HopeIcon icon="fa-solid fa-shapes" /> Object（物件类）
-
-- B_ObjectAttributes
-- B_ObjectChangeColor
-- B_ObjectDrop
-- B_ObjectFilter
-- B_ObjectNameReplace
-- B_ObjectShare
-- B_ObjectTable
-- B_SetSequence
-:::
-
-::: details <HopeIcon icon="fa-solid fa-layer-group" /> Layer（图层类）
-
-- B_CopyLayerToClipboard
-- B_ImportLayerFromClipboard
-- B_LayerChangeColor
-- B_LayerFullPath
-- B_LayerNameReplace
-- B_LayerOnlyShow
-- B_FindLayerFromObject
-:::
-
-::: details <HopeIcon icon="fa-solid fa-draw-square" /> Group（群组类）
-
-- B_GroupByBound
-- B_GroupBySimilarSrf
-:::
-
-::: details <HopeIcon icon="fa-solid fa-check" /> Selection（选取类）
-
-- B_SelBlock
-- B_SelEdge
-- B_SelLength
-- B_SelMatchText
-- B_SelObject
-- B_SelSimilar
-:::
-
-::: details <HopeIcon icon="fa-solid fa-list" /> Multiple（多项类）
-
-- B_SiftSrf
-- B_CullDuplicate
-- B_CullDuplicateCrv
-- B_CullDuplicateSrf
-:::
-
-::: details <HopeIcon icon="fa-solid fa-draw-square" /> Transform（变换类）
-
-- B_Rotate
-- B_Scale
-- B_Project
-- B_UniformDirection
-- B_CornerPin
-- B_Slide
-- B_Planarization
-- B_CurveSnap
-:::
-
-::: details <HopeIcon icon="fa-solid fa-hammer" /> Utility（实用类）
-
-- B_ChangeColorTheme
-- B_Start
-- B_SetMacro
-- B_ResetRtf
-:::
-
-<!--
-
-::: tip 提示
-这是一个提示
-:::
-
-::: warning 警告
-这是一个警告
-:::
-
-::: danger 危险
-这是一个危险警告
-:::
-
-::: details 点击展开详情
-这是一个详情块，在 IE / Edge 中不生效
-:::
-
-:::: code-group
-::: code-group-item FOO
-```js
-const foo = 'foo'
+- 注意点 1
+- 注意点 2
 ```
-:::
-::: code-group-item BAR
-```js
-const bar = 'bar'
-```
-:::
-::::
 
--->
+## 分类总览
+
+### Dimension
+
+- [Dimension 分类入口](./Dimension/)
+- 适合放置标注、引线、尺寸调整相关命令
+
+### Plane
+
+- [Plane 分类入口](./Plane/)
+- 适合放置构造平面、切割、相交、修剪相关命令
+
+### Analysis
+
+- [Analysis 分类入口](./Analysis/)
+- 适合放置面积、长度、体积、质量与统计分析命令
+
+### Array
+
+- [Array 分类入口](./Array/)
+- 适合放置阵列、复制与排布命令
+
+### Block
+
+- [Block 分类入口](./Block/)
+- 适合放置块对齐、替换、复制等命令
+
+### Bounding
+
+- [Bounding 分类入口](./Bounding/)
+- 适合放置包围盒、边界、轮廓相关命令
+
+### Trim
+
+- [Trim 分类入口](./Trim/)
+- 适合放置碰撞裁切、半径修剪、镜像修剪等命令
+
+### Connect
+
+- [Connect 分类入口](./Connect/)
+- 适合放置连线、连点、投影连接类命令
+
+### Convert
+
+- [Convert 分类入口](./Convert/)
+- 适合放置格式转换、注释转换、网格与曲线互转命令
+
+### Curve
+
+- [Curve 分类入口](./Curve/)
+- 适合放置曲线拟合、延伸、重建、转折线等命令
+
+### Layer
+
+- [Layer 分类入口](./Layer/)
+- 适合放置图层导入导出、筛选、重命名与显示控制命令
+
+### Draw
+
+- [Draw 分类入口](./Draw/)
+- 适合放置绘制边界、网格、表格、多重曲面等命令
+
+### Mesh
+
+- [Mesh 分类入口](./Mesh/)
+- 适合放置网格生成、偏移、结构、法线与网格转实体命令
+
+### Surface
+
+- [Surface 分类入口](./Surface/)
+- 适合放置曲面整合、放平、重建、展开类命令
+
+### Tube
+
+- [Tube 分类入口](./Tube/)
+- 适合放置各类管件、线性型材、封口、分割与修剪命令
+
+### Group
+
+- [Group 分类入口](./Group/)
+- 适合放置群组、重组、按区域或磁吸分组命令
+
+### Selection
+
+- [Selection 分类入口](./Selection/)
+- 适合放置按方向、边、面、顶点、长度与相似性选择命令
+
+### Object
+
+- [Object 分类入口](./Object/)
+- 适合放置对象属性、颜色、过滤、命名、共享与下落命令
+
+### Placement
+
+- [Placement 分类入口](./Placement/)
+- 适合放置摆放、投影、平面对平面与基于面的定位命令
+
+### Transform
+
+- [Transform 分类入口](./Transform/)
+- 适合放置旋转、缩放、滑动、拉长、镜像与变换整理命令
+
+### Point
+
+- [Point 分类入口](./Point/)
+- 适合放置点提取、导入、定位、捕捉与点生成命令
+
+### Text
+
+- [Text 分类入口](./Text/)
+- 适合放置文字查找、替换、偏移、富文本与用户字符串处理命令
+
+### Layout
+
+- [Layout 分类入口](./Layout/)
+- 适合放置表格、排版、编号、序列和布局命令
+
+### Utility
+
+- [Utility 分类入口](./Utility/)
+- 适合放置菜单、快捷键、主题色、导入导出与系统工具命令
+
+### Other
+
+- [Other 分类入口](./Other/)
+- 适合放置暂时不方便归类的命令

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #68004b;
+      }
+
+      .cls-2 {
+        opacity: .6;
+      }
+
+      .cls-3 {
+        fill: #fafafa;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #68004b;
+        stroke-linecap: square;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <g>
+      <polygon class="cls-3" points="80 32.68 80 50 65 41.34 65 24.02 80 32.68"/>
+      <polygon class="cls-1" points="65 24.02 65 41.34 50 32.68 50 15.36 65 24.02"/>
+      <polygon class="cls-2" points="50 50 65 58.66 50 67.32 35 58.66 50 50"/>
+      <polygon class="cls-3" points="50 67.32 35 75.98 20 67.32 35 58.66 50 67.32"/>
+      <polygon class="cls-1" points="80 50 80 67.32 65 58.66 65 41.34 80 50"/>
+      <polygon class="cls-3" points="65 75.98 50 67.32 65 58.66 80 67.32 65 75.98"/>
+      <polygon class="cls-3" points="65 41.34 65 58.66 50 50 50 32.68 65 41.34"/>
+      <polygon class="cls-2" points="35 75.98 50 67.32 65 75.98 50 84.64 35 75.98"/>
+    </g>
+    <g>
+      <line class="cls-4" x1="80" y1="67.32" x2="50" y2="50"/>
+      <path class="cls-1" d="M50,15.36l30,17.32v34.64l-30,17.32-30-17.32,30-17.32V15.36M47,10.16v38.11l-28.5,16.45-4.5,2.6,4.5,2.6,30,17.32,1.5.87,1.5-.87,30-17.32,1.5-.87V30.95l-1.5-.87-30-17.32-4.5-2.6h0Z"/>
+    </g>
+    <path class="cls-1" d="M23.61,65.24c-.23-9.63,4.8-23.22,12.01-32.48l2.29,2.74,5.78-15.95-12.32,8.11,2.29,2.74c-8.19,10.52-13.9,25.98-13.64,36.91l3.6-2.08Z"/>
+  </g>
+</svg>
