@@ -83,7 +83,6 @@ export default hopeTheme({
       imgSize: true,
       include: true,
       mark: true,
-      mermaid: true,
       stylize: [
         {
           matcher: "Recommended",
