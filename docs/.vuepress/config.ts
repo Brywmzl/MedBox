@@ -3,8 +3,6 @@ import theme from "./theme.js";
 
 export default defineUserConfig({
   base: "/MedBox/",
-
-  lang: "zh-CN",
   title: "MedBox",
   description: "MedBox Rhino Utility Plugin & GH Component",
 

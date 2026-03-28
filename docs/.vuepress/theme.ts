@@ -22,7 +22,7 @@ export default hopeTheme({
 
   // navbar
   navbar,
-  navTitle: 'MedBox',
+  navTitle: false,
 
   // sidebar
   sidebar,

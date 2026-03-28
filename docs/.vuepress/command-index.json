@@ -1,0 +1,314 @@
+﻿[
+    {
+        "title":  "B_Area",
+        "category":  "Analysis",
+        "link":  "/guide/Analysis/B_Area",
+        "icon":  "/media/svgs/med_B_Area.svg"
+    },
+    {
+        "title":  "B_Length",
+        "category":  "Analysis",
+        "link":  "/guide/Analysis/B_Length",
+        "icon":  "/media/svgs/med_B_Length.svg"
+    },
+    {
+        "title":  "B_PlanarHeightTest",
+        "category":  "Analysis",
+        "link":  "/guide/Analysis/B_PlanarHeightTest",
+        "icon":  "/media/svgs/med_B_PlanarHeightTest.svg"
+    },
+    {
+        "title":  "B_Volume",
+        "category":  "Analysis",
+        "link":  "/guide/Analysis/B_Volume",
+        "icon":  "/media/svgs/med_Analysis.svg"
+    },
+    {
+        "title":  "B_FitArc",
+        "category":  "Curve",
+        "link":  "/guide/Curve/B_FitArc",
+        "icon":  "/media/svgs/med_B_FitArc.svg"
+    },
+    {
+        "title":  "B_Make2D",
+        "category":  "Curve",
+        "link":  "/guide/Curve/B_Make2D",
+        "icon":  "/media/svgs/med_B_Make2D.svg"
+    },
+    {
+        "title":  "B_ToPolyline",
+        "category":  "Curve",
+        "link":  "/guide/Curve/B_ToPolyline",
+        "icon":  "/media/svgs/med_B_ToPolyline.svg"
+    },
+    {
+        "title":  "B_AddAngularDimensionByNode",
+        "category":  "Dimension",
+        "link":  "/guide/Dimension/B_AddAngularDimensionByNode",
+        "icon":  "/media/svgs/med_B_AddAngularDimensionByNode.svg"
+    },
+    {
+        "title":  "B_AddAxisNumber",
+        "category":  "Dimension",
+        "link":  "/guide/Dimension/B_AddAxisNumber",
+        "icon":  "/media/svgs/med_B_AddAxisNumber.svg"
+    },
+    {
+        "title":  "B_AddDot",
+        "category":  "Dimension",
+        "link":  "/guide/Dimension/B_AddDot",
+        "icon":  "/media/svgs/med_B_AddDot.svg"
+    },
+    {
+        "title":  "B_AddDotByDistance",
+        "category":  "Dimension",
+        "link":  "/guide/Dimension/B_AddDotByDistance",
+        "icon":  "/media/svgs/med_B_AddDotByDistance.svg"
+    },
+    {
+        "title":  "B_AddDotByLength",
+        "category":  "Dimension",
+        "link":  "/guide/Dimension/B_AddDotByLength",
+        "icon":  "/media/svgs/med_B_AddDotByLength.svg"
+    },
+    {
+        "title":  "B_AddDotByLocation",
+        "category":  "Dimension",
+        "link":  "/guide/Dimension/B_AddDotByLocation",
+        "icon":  "/media/svgs/med_B_AddDotByLocation.svg"
+    },
+    {
+        "title":  "B_AddLinearDimensionBy3Pt",
+        "category":  "Dimension",
+        "link":  "/guide/Dimension/B_AddLinearDimensionBy3Pt",
+        "icon":  "/media/svgs/med_B_AddLinearDimensionBy3Pt.svg"
+    },
+    {
+        "title":  "B_AddLinearDimensionByArc",
+        "category":  "Dimension",
+        "link":  "/guide/Dimension/B_AddLinearDimensionByArc",
+        "icon":  "/media/svgs/med_B_AddLinearDimensionByArc.svg"
+    },
+    {
+        "title":  "B_AddLinearDimensionByDiagonal",
+        "category":  "Dimension",
+        "link":  "/guide/Dimension/B_AddLinearDimensionByDiagonal",
+        "icon":  "/media/svgs/med_B_AddLinearDimensionByDiagonal.svg"
+    },
+    {
+        "title":  "B_AddLinearDimensionByInterior",
+        "category":  "Dimension",
+        "link":  "/guide/Dimension/B_AddLinearDimensionByInterior",
+        "icon":  "/media/svgs/med_B_AddLinearDimensionByInterior.svg"
+    },
+    {
+        "title":  "B_AddLinearDimensionByNaked",
+        "category":  "Dimension",
+        "link":  "/guide/Dimension/B_AddLinearDimensionByNaked",
+        "icon":  "/media/svgs/med_B_AddLinearDimensionByNaked.svg"
+    },
+    {
+        "title":  "B_AddRadialDimension",
+        "category":  "Dimension",
+        "link":  "/guide/Dimension/B_AddRadialDimension",
+        "icon":  "/media/svgs/med_B_AddRadialDimension.svg"
+    },
+    {
+        "title":  "B_GroupByBound",
+        "category":  "Group",
+        "link":  "/guide/Group/B_GroupByBound",
+        "icon":  "/media/svgs/med_B_GroupByBound.svg"
+    },
+    {
+        "title":  "B_CopyLayerToClipboard",
+        "category":  "Layer",
+        "link":  "/guide/Layer/B_CopyLayerToClipboard",
+        "icon":  "/media/svgs/med_B_CopyLayerToClipboard.svg"
+    },
+    {
+        "title":  "B_ImportLayerFromClipboard",
+        "category":  "Layer",
+        "link":  "/guide/Layer/B_ImportLayerFromClipboard",
+        "icon":  "/media/svgs/med_B_ImportLayerFromClipboard.svg"
+    },
+    {
+        "title":  "B_LayerFullPath",
+        "category":  "Layer",
+        "link":  "/guide/Layer/B_LayerFullPath",
+        "icon":  "/media/svgs/med_B_LayerFullPath.svg"
+    },
+    {
+        "title":  "B_LayerNameReplace",
+        "category":  "Layer",
+        "link":  "/guide/Layer/B_LayerNameReplace",
+        "icon":  "/media/svgs/med_B_LayerNameReplace.svg"
+    },
+    {
+        "title":  "B_LayerOnlyShow",
+        "category":  "Layer",
+        "link":  "/guide/Layer/B_LayerOnlyShow",
+        "icon":  "/media/svgs/med_B_LayerOnlyShow.svg"
+    },
+    {
+        "title":  "B_ObjectAttributes",
+        "category":  "Object",
+        "link":  "/guide/Object/B_ObjectAttributes",
+        "icon":  "/media/svgs/med_B_ObjectAttributes.svg"
+    },
+    {
+        "title":  "B_ObjectDrop",
+        "category":  "Object",
+        "link":  "/guide/Object/B_ObjectDrop",
+        "icon":  "/media/svgs/med_B_ObjectDrop.svg"
+    },
+    {
+        "title":  "B_ObjectFilter",
+        "category":  "Object",
+        "link":  "/guide/Object/B_ObjectFilter",
+        "icon":  "/media/svgs/med_B_ObjectFilter.svg"
+    },
+    {
+        "title":  "B_ObjectNameReplace",
+        "category":  "Object",
+        "link":  "/guide/Object/B_ObjectNameReplace",
+        "icon":  "/media/svgs/med_B_ObjectNameReplace.svg"
+    },
+    {
+        "title":  "B_ObjectShare",
+        "category":  "Object",
+        "link":  "/guide/Object/B_ObjectShare",
+        "icon":  "/media/svgs/med_B_ObjectShare.svg"
+    },
+    {
+        "title":  "B_ObjectTable",
+        "category":  "Object",
+        "link":  "/guide/Object/B_ObjectTable",
+        "icon":  "/media/svgs/med_B_ObjectTable.svg"
+    },
+    {
+        "title":  "B_SetSequence",
+        "category":  "Object",
+        "link":  "/guide/Object/B_SetSequence",
+        "icon":  "/media/svgs/med_Object.svg"
+    },
+    {
+        "title":  "B_ExportLocation",
+        "category":  "Point",
+        "link":  "/guide/Point/B_ExportLocation",
+        "icon":  "/media/svgs/med_B_ExportLocation.svg"
+    },
+    {
+        "title":  "B_ImportPoints",
+        "category":  "Point",
+        "link":  "/guide/Point/B_ImportPoints",
+        "icon":  "/media/svgs/med_B_ImportPoints.svg"
+    },
+    {
+        "title":  "B_SelBlock",
+        "category":  "Selection",
+        "link":  "/guide/Selection/B_SelBlock",
+        "icon":  "/media/svgs/med_B_SelBlock.svg"
+    },
+    {
+        "title":  "B_SelEdge",
+        "category":  "Selection",
+        "link":  "/guide/Selection/B_SelEdge",
+        "icon":  "/media/svgs/med_Selection.svg"
+    },
+    {
+        "title":  "B_SelLength",
+        "category":  "Selection",
+        "link":  "/guide/Selection/B_SelLength",
+        "icon":  "/media/svgs/med_B_SelLength.svg"
+    },
+    {
+        "title":  "B_SelObject",
+        "category":  "Selection",
+        "link":  "/guide/Selection/B_SelObject",
+        "icon":  "/media/svgs/med_Selection.svg"
+    },
+    {
+        "title":  "B_SelSimilar",
+        "category":  "Selection",
+        "link":  "/guide/Selection/B_SelSimilar",
+        "icon":  "/media/svgs/med_B_SelSimilar.svg"
+    },
+    {
+        "title":  "B_FindText",
+        "category":  "Text",
+        "link":  "/guide/Text/B_FindText",
+        "icon":  "/media/svgs/med_B_FindText.svg"
+    },
+    {
+        "title":  "B_FindTextFromInsertion",
+        "category":  "Text",
+        "link":  "/guide/Text/B_FindTextFromInsertion",
+        "icon":  "/media/svgs/med_B_FindTextFromInsertion.svg"
+    },
+    {
+        "title":  "B_Text",
+        "category":  "Text",
+        "link":  "/guide/Text/B_Text",
+        "icon":  "/media/svgs/med_B_Text.svg"
+    },
+    {
+        "title":  "B_CornerPin",
+        "category":  "Transform",
+        "link":  "/guide/Transform/B_CornerPin",
+        "icon":  "/media/svgs/med_B_CornerPin.svg"
+    },
+    {
+        "title":  "B_CurveSnap",
+        "category":  "Transform",
+        "link":  "/guide/Transform/B_CurveSnap",
+        "icon":  "/media/svgs/med_B_CurveSnap.svg"
+    },
+    {
+        "title":  "B_Planarization",
+        "category":  "Transform",
+        "link":  "/guide/Transform/B_Planarization",
+        "icon":  "/media/svgs/med_B_Planarization.svg"
+    },
+    {
+        "title":  "B_Project",
+        "category":  "Transform",
+        "link":  "/guide/Transform/B_Project",
+        "icon":  "/media/svgs/med_B_Project.svg"
+    },
+    {
+        "title":  "B_Rotate",
+        "category":  "Transform",
+        "link":  "/guide/Transform/B_Rotate",
+        "icon":  "/media/svgs/med_B_Rotate.svg"
+    },
+    {
+        "title":  "B_Scale",
+        "category":  "Transform",
+        "link":  "/guide/Transform/B_Scale",
+        "icon":  "/media/svgs/med_B_Scale.svg"
+    },
+    {
+        "title":  "B_Slide",
+        "category":  "Transform",
+        "link":  "/guide/Transform/B_Slide",
+        "icon":  "/media/svgs/med_B_Slide.svg"
+    },
+    {
+        "title":  "B_UniformDirection",
+        "category":  "Transform",
+        "link":  "/guide/Transform/B_UniformDirection",
+        "icon":  "/media/svgs/med_B_UniformDirection.svg"
+    },
+    {
+        "title":  "B_ResetRtf",
+        "category":  "Utility",
+        "link":  "/guide/Utility/B_ResetRtf",
+        "icon":  "/media/svgs/med_B_ResetRtf.svg"
+    },
+    {
+        "title":  "B_SetMacro",
+        "category":  "Utility",
+        "link":  "/guide/Utility/B_SetMacro",
+        "icon":  "/media/svgs/med_B_SetMacro.svg"
+    }
+]

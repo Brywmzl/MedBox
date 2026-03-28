@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #68004b;
+      }
+
+      .cls-2 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <polygon class="cls-1" points="50 21.11 82.5 35.56 50 50 17.5 35.56 50 21.11"/>
+    <polygon class="cls-1" points="50 53.95 70.7 44.75 82.5 50 50 64.44 17.5 50 29.3 44.75 50 53.95"/>
+    <polygon class="cls-1" points="70.7 59.2 82.5 64.44 50 78.89 17.5 64.44 29.3 59.2 50 68.39 70.7 59.2"/>
+  </g>
+</svg>
