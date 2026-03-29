@@ -14,6 +14,8 @@ export default defineComponent({
     const siteTitle = computed(() => siteLocale.value.title);
     const siteBrandLogo = computed(() => themeLocale.value.logo ? withBase(themeLocale.value.logo) : null);
     const siteBrandLogoDark = computed(() => themeLocale.value.logoDark ? withBase(themeLocale.value.logoDark) : null);
+    const siteWordmark = computed(() => withBase("/media/font-brand-light.svg"));
+    const siteWordmarkDark = computed(() => withBase("/media/font-brand-dark.svg"));
 
     return () =>
       h(VPLink, { to: siteBrandLink.value, class: "vp-brand" }, () => [
@@ -32,8 +34,13 @@ export default defineComponent({
             })
           : null,
         h("img", {
-          class: "vp-site-name-image",
-          src: withBase("/media/font-brand-light.svg"),
+          class: ["vp-site-name-image", "light"],
+          src: siteWordmark.value,
+          alt: siteTitle.value,
+        }),
+        h("img", {
+          class: ["vp-site-name-image", "dark"],
+          src: siteWordmarkDark.value,
           alt: siteTitle.value,
         }),
       ]);

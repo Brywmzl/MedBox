@@ -1,16 +1,19 @@
 import { sidebar } from "vuepress-theme-hope";
 import commandIndex from "./command-index.json";
 
+const sortedCommandIndex = [...commandIndex].sort((left, right) =>
+  left.title.localeCompare(right.title, "zh-Hans-CN", { numeric: true, sensitivity: "base" })
+);
+
 export default sidebar({
-  "/": [
+  "/guide/": [
     {
-      text: "Guide",
+      text: "命令目录",
       icon: "book",
-      prefix: "guide/", // 可选的，会添加到每个 item 链接地址之前
-      children: commandIndex.map((item) => ({
+      prefix: "",
+      children: sortedCommandIndex.map((item) => ({
         text: item.title,
         link: item.link,
-        icon: item.icon,
       })),
     },
   ],

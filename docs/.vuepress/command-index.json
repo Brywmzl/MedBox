@@ -1,314 +1,453 @@
-﻿[
-    {
-        "title":  "B_Area",
-        "category":  "Analysis",
-        "link":  "/guide/Analysis/B_Area",
-        "icon":  "/media/svgs/med_B_Area.svg"
-    },
-    {
-        "title":  "B_Length",
-        "category":  "Analysis",
-        "link":  "/guide/Analysis/B_Length",
-        "icon":  "/media/svgs/med_B_Length.svg"
-    },
-    {
-        "title":  "B_PlanarHeightTest",
-        "category":  "Analysis",
-        "link":  "/guide/Analysis/B_PlanarHeightTest",
-        "icon":  "/media/svgs/med_B_PlanarHeightTest.svg"
-    },
-    {
-        "title":  "B_Volume",
-        "category":  "Analysis",
-        "link":  "/guide/Analysis/B_Volume",
-        "icon":  "/media/svgs/med_Analysis.svg"
-    },
-    {
-        "title":  "B_FitArc",
-        "category":  "Curve",
-        "link":  "/guide/Curve/B_FitArc",
-        "icon":  "/media/svgs/med_B_FitArc.svg"
-    },
-    {
-        "title":  "B_Make2D",
-        "category":  "Curve",
-        "link":  "/guide/Curve/B_Make2D",
-        "icon":  "/media/svgs/med_B_Make2D.svg"
-    },
-    {
-        "title":  "B_ToPolyline",
-        "category":  "Curve",
-        "link":  "/guide/Curve/B_ToPolyline",
-        "icon":  "/media/svgs/med_B_ToPolyline.svg"
-    },
-    {
-        "title":  "B_AddAngularDimensionByNode",
-        "category":  "Dimension",
-        "link":  "/guide/Dimension/B_AddAngularDimensionByNode",
-        "icon":  "/media/svgs/med_B_AddAngularDimensionByNode.svg"
-    },
-    {
-        "title":  "B_AddAxisNumber",
-        "category":  "Dimension",
-        "link":  "/guide/Dimension/B_AddAxisNumber",
-        "icon":  "/media/svgs/med_B_AddAxisNumber.svg"
-    },
-    {
-        "title":  "B_AddDot",
-        "category":  "Dimension",
-        "link":  "/guide/Dimension/B_AddDot",
-        "icon":  "/media/svgs/med_B_AddDot.svg"
-    },
-    {
-        "title":  "B_AddDotByDistance",
-        "category":  "Dimension",
-        "link":  "/guide/Dimension/B_AddDotByDistance",
-        "icon":  "/media/svgs/med_B_AddDotByDistance.svg"
-    },
-    {
-        "title":  "B_AddDotByLength",
-        "category":  "Dimension",
-        "link":  "/guide/Dimension/B_AddDotByLength",
-        "icon":  "/media/svgs/med_B_AddDotByLength.svg"
-    },
-    {
-        "title":  "B_AddDotByLocation",
-        "category":  "Dimension",
-        "link":  "/guide/Dimension/B_AddDotByLocation",
-        "icon":  "/media/svgs/med_B_AddDotByLocation.svg"
-    },
-    {
-        "title":  "B_AddLinearDimensionBy3Pt",
-        "category":  "Dimension",
-        "link":  "/guide/Dimension/B_AddLinearDimensionBy3Pt",
-        "icon":  "/media/svgs/med_B_AddLinearDimensionBy3Pt.svg"
-    },
-    {
-        "title":  "B_AddLinearDimensionByArc",
-        "category":  "Dimension",
-        "link":  "/guide/Dimension/B_AddLinearDimensionByArc",
-        "icon":  "/media/svgs/med_B_AddLinearDimensionByArc.svg"
-    },
-    {
-        "title":  "B_AddLinearDimensionByDiagonal",
-        "category":  "Dimension",
-        "link":  "/guide/Dimension/B_AddLinearDimensionByDiagonal",
-        "icon":  "/media/svgs/med_B_AddLinearDimensionByDiagonal.svg"
-    },
-    {
-        "title":  "B_AddLinearDimensionByInterior",
-        "category":  "Dimension",
-        "link":  "/guide/Dimension/B_AddLinearDimensionByInterior",
-        "icon":  "/media/svgs/med_B_AddLinearDimensionByInterior.svg"
-    },
-    {
-        "title":  "B_AddLinearDimensionByNaked",
-        "category":  "Dimension",
-        "link":  "/guide/Dimension/B_AddLinearDimensionByNaked",
-        "icon":  "/media/svgs/med_B_AddLinearDimensionByNaked.svg"
-    },
-    {
-        "title":  "B_AddRadialDimension",
-        "category":  "Dimension",
-        "link":  "/guide/Dimension/B_AddRadialDimension",
-        "icon":  "/media/svgs/med_B_AddRadialDimension.svg"
-    },
-    {
-        "title":  "B_GroupByBound",
-        "category":  "Group",
-        "link":  "/guide/Group/B_GroupByBound",
-        "icon":  "/media/svgs/med_B_GroupByBound.svg"
-    },
-    {
-        "title":  "B_CopyLayerToClipboard",
-        "category":  "Layer",
-        "link":  "/guide/Layer/B_CopyLayerToClipboard",
-        "icon":  "/media/svgs/med_B_CopyLayerToClipboard.svg"
-    },
-    {
-        "title":  "B_ImportLayerFromClipboard",
-        "category":  "Layer",
-        "link":  "/guide/Layer/B_ImportLayerFromClipboard",
-        "icon":  "/media/svgs/med_B_ImportLayerFromClipboard.svg"
-    },
-    {
-        "title":  "B_LayerFullPath",
-        "category":  "Layer",
-        "link":  "/guide/Layer/B_LayerFullPath",
-        "icon":  "/media/svgs/med_B_LayerFullPath.svg"
-    },
-    {
-        "title":  "B_LayerNameReplace",
-        "category":  "Layer",
-        "link":  "/guide/Layer/B_LayerNameReplace",
-        "icon":  "/media/svgs/med_B_LayerNameReplace.svg"
-    },
-    {
-        "title":  "B_LayerOnlyShow",
-        "category":  "Layer",
-        "link":  "/guide/Layer/B_LayerOnlyShow",
-        "icon":  "/media/svgs/med_B_LayerOnlyShow.svg"
-    },
-    {
-        "title":  "B_ObjectAttributes",
-        "category":  "Object",
-        "link":  "/guide/Object/B_ObjectAttributes",
-        "icon":  "/media/svgs/med_B_ObjectAttributes.svg"
-    },
-    {
-        "title":  "B_ObjectDrop",
-        "category":  "Object",
-        "link":  "/guide/Object/B_ObjectDrop",
-        "icon":  "/media/svgs/med_B_ObjectDrop.svg"
-    },
-    {
-        "title":  "B_ObjectFilter",
-        "category":  "Object",
-        "link":  "/guide/Object/B_ObjectFilter",
-        "icon":  "/media/svgs/med_B_ObjectFilter.svg"
-    },
-    {
-        "title":  "B_ObjectNameReplace",
-        "category":  "Object",
-        "link":  "/guide/Object/B_ObjectNameReplace",
-        "icon":  "/media/svgs/med_B_ObjectNameReplace.svg"
-    },
-    {
-        "title":  "B_ObjectShare",
-        "category":  "Object",
-        "link":  "/guide/Object/B_ObjectShare",
-        "icon":  "/media/svgs/med_B_ObjectShare.svg"
-    },
-    {
-        "title":  "B_ObjectTable",
-        "category":  "Object",
-        "link":  "/guide/Object/B_ObjectTable",
-        "icon":  "/media/svgs/med_B_ObjectTable.svg"
-    },
-    {
-        "title":  "B_SetSequence",
-        "category":  "Object",
-        "link":  "/guide/Object/B_SetSequence",
-        "icon":  "/media/svgs/med_Object.svg"
-    },
-    {
-        "title":  "B_ExportLocation",
-        "category":  "Point",
-        "link":  "/guide/Point/B_ExportLocation",
-        "icon":  "/media/svgs/med_B_ExportLocation.svg"
-    },
-    {
-        "title":  "B_ImportPoints",
-        "category":  "Point",
-        "link":  "/guide/Point/B_ImportPoints",
-        "icon":  "/media/svgs/med_B_ImportPoints.svg"
-    },
-    {
-        "title":  "B_SelBlock",
-        "category":  "Selection",
-        "link":  "/guide/Selection/B_SelBlock",
-        "icon":  "/media/svgs/med_B_SelBlock.svg"
-    },
-    {
-        "title":  "B_SelEdge",
-        "category":  "Selection",
-        "link":  "/guide/Selection/B_SelEdge",
-        "icon":  "/media/svgs/med_Selection.svg"
-    },
-    {
-        "title":  "B_SelLength",
-        "category":  "Selection",
-        "link":  "/guide/Selection/B_SelLength",
-        "icon":  "/media/svgs/med_B_SelLength.svg"
-    },
-    {
-        "title":  "B_SelObject",
-        "category":  "Selection",
-        "link":  "/guide/Selection/B_SelObject",
-        "icon":  "/media/svgs/med_Selection.svg"
-    },
-    {
-        "title":  "B_SelSimilar",
-        "category":  "Selection",
-        "link":  "/guide/Selection/B_SelSimilar",
-        "icon":  "/media/svgs/med_B_SelSimilar.svg"
-    },
-    {
-        "title":  "B_FindText",
-        "category":  "Text",
-        "link":  "/guide/Text/B_FindText",
-        "icon":  "/media/svgs/med_B_FindText.svg"
-    },
-    {
-        "title":  "B_FindTextFromInsertion",
-        "category":  "Text",
-        "link":  "/guide/Text/B_FindTextFromInsertion",
-        "icon":  "/media/svgs/med_B_FindTextFromInsertion.svg"
-    },
-    {
-        "title":  "B_Text",
-        "category":  "Text",
-        "link":  "/guide/Text/B_Text",
-        "icon":  "/media/svgs/med_B_Text.svg"
-    },
-    {
-        "title":  "B_CornerPin",
-        "category":  "Transform",
-        "link":  "/guide/Transform/B_CornerPin",
-        "icon":  "/media/svgs/med_B_CornerPin.svg"
-    },
-    {
-        "title":  "B_CurveSnap",
-        "category":  "Transform",
-        "link":  "/guide/Transform/B_CurveSnap",
-        "icon":  "/media/svgs/med_B_CurveSnap.svg"
-    },
-    {
-        "title":  "B_Planarization",
-        "category":  "Transform",
-        "link":  "/guide/Transform/B_Planarization",
-        "icon":  "/media/svgs/med_B_Planarization.svg"
-    },
-    {
-        "title":  "B_Project",
-        "category":  "Transform",
-        "link":  "/guide/Transform/B_Project",
-        "icon":  "/media/svgs/med_B_Project.svg"
-    },
-    {
-        "title":  "B_Rotate",
-        "category":  "Transform",
-        "link":  "/guide/Transform/B_Rotate",
-        "icon":  "/media/svgs/med_B_Rotate.svg"
-    },
-    {
-        "title":  "B_Scale",
-        "category":  "Transform",
-        "link":  "/guide/Transform/B_Scale",
-        "icon":  "/media/svgs/med_B_Scale.svg"
-    },
-    {
-        "title":  "B_Slide",
-        "category":  "Transform",
-        "link":  "/guide/Transform/B_Slide",
-        "icon":  "/media/svgs/med_B_Slide.svg"
-    },
-    {
-        "title":  "B_UniformDirection",
-        "category":  "Transform",
-        "link":  "/guide/Transform/B_UniformDirection",
-        "icon":  "/media/svgs/med_B_UniformDirection.svg"
-    },
-    {
-        "title":  "B_ResetRtf",
-        "category":  "Utility",
-        "link":  "/guide/Utility/B_ResetRtf",
-        "icon":  "/media/svgs/med_B_ResetRtf.svg"
-    },
-    {
-        "title":  "B_SetMacro",
-        "category":  "Utility",
-        "link":  "/guide/Utility/B_SetMacro",
-        "icon":  "/media/svgs/med_B_SetMacro.svg"
-    }
+[
+  {
+    "title": "B_AddAngularDimensionByNode",
+    "link": "/guide/B_AddAngularDimensionByNode",
+    "icon": "/media/svgs/med_B_AddAngularDimensionByNode.svg",
+    "tags": [
+      "标注",
+      "曲线"
+    ]
+  },
+  {
+    "title": "B_AddAxisNumber",
+    "link": "/guide/B_AddAxisNumber",
+    "icon": "/media/svgs/med_B_AddAxisNumber.svg",
+    "tags": [
+      "标注"
+    ]
+  },
+  {
+    "title": "B_AddDot",
+    "link": "/guide/B_AddDot",
+    "icon": "/media/svgs/med_B_AddDot.svg",
+    "tags": [
+      "标注",
+      "物件"
+    ]
+  },
+  {
+    "title": "B_AddDotByDistance",
+    "link": "/guide/B_AddDotByDistance",
+    "icon": "/media/svgs/med_B_AddDotByDistance.svg",
+    "tags": [
+      "标注",
+      "点"
+    ]
+  },
+  {
+    "title": "B_AddDotByLength",
+    "link": "/guide/B_AddDotByLength",
+    "icon": "/media/svgs/med_B_AddDotByLength.svg",
+    "tags": [
+      "标注",
+      "曲线"
+    ]
+  },
+  {
+    "title": "B_AddDotByLocation",
+    "link": "/guide/B_AddDotByLocation",
+    "icon": "/media/svgs/med_B_AddDotByLocation.svg",
+    "tags": [
+      "标注",
+      "点"
+    ]
+  },
+  {
+    "title": "B_AddLinearDimensionBy3Pt",
+    "link": "/guide/B_AddLinearDimensionBy3Pt",
+    "icon": "/media/svgs/med_B_AddLinearDimensionBy3Pt.svg",
+    "tags": [
+      "标注"
+    ]
+  },
+  {
+    "title": "B_AddLinearDimensionByArc",
+    "link": "/guide/B_AddLinearDimensionByArc",
+    "icon": "/media/svgs/med_B_AddLinearDimensionByArc.svg",
+    "tags": [
+      "标注",
+      "曲线"
+    ]
+  },
+  {
+    "title": "B_AddLinearDimensionByDiagonal",
+    "link": "/guide/B_AddLinearDimensionByDiagonal",
+    "icon": "/media/svgs/med_B_AddLinearDimensionByDiagonal.svg",
+    "tags": [
+      "标注",
+      "曲面"
+    ]
+  },
+  {
+    "title": "B_AddLinearDimensionByInterior",
+    "link": "/guide/B_AddLinearDimensionByInterior",
+    "icon": "/media/svgs/med_B_AddLinearDimensionByInterior.svg",
+    "tags": [
+      "标注",
+      "曲面"
+    ]
+  },
+  {
+    "title": "B_AddLinearDimensionByNaked",
+    "link": "/guide/B_AddLinearDimensionByNaked",
+    "icon": "/media/svgs/med_B_AddLinearDimensionByNaked.svg",
+    "tags": [
+      "标注",
+      "曲面"
+    ]
+  },
+  {
+    "title": "B_AddRadialDimension",
+    "link": "/guide/B_AddRadialDimension",
+    "icon": "/media/svgs/med_B_AddRadialDimension.svg",
+    "tags": [
+      "标注",
+      "曲线"
+    ]
+  },
+  {
+    "title": "B_Area",
+    "link": "/guide/B_Area",
+    "icon": "/media/svgs/med_B_Area.svg",
+    "tags": [
+      "分析",
+      "统计"
+    ]
+  },
+  {
+    "title": "B_CopyLayerToClipboard",
+    "link": "/guide/B_CopyLayerToClipboard",
+    "icon": "/media/svgs/med_B_CopyLayerToClipboard.svg",
+    "tags": [
+      "图层",
+      "工具"
+    ]
+  },
+  {
+    "title": "B_CornerPin",
+    "link": "/guide/B_CornerPin",
+    "icon": "/media/svgs/med_B_CornerPin.svg",
+    "tags": [
+      "变换",
+      "曲面"
+    ]
+  },
+  {
+    "title": "B_CurveSnap",
+    "link": "/guide/B_CurveSnap",
+    "icon": "/media/svgs/med_B_CurveSnap.svg",
+    "tags": [
+      "变换",
+      "曲线"
+    ]
+  },
+  {
+    "title": "B_ExportLocation",
+    "link": "/guide/B_ExportLocation",
+    "icon": "/media/svgs/med_B_ExportLocation.svg",
+    "tags": [
+      "点",
+      "工具"
+    ]
+  },
+  {
+    "title": "B_FindText",
+    "link": "/guide/B_FindText",
+    "icon": "/media/svgs/med_B_FindText.svg",
+    "tags": [
+      "文字"
+    ]
+  },
+  {
+    "title": "B_FindTextFromInsertion",
+    "link": "/guide/B_FindTextFromInsertion",
+    "icon": "/media/svgs/med_B_FindTextFromInsertion.svg",
+    "tags": [
+      "文字"
+    ]
+  },
+  {
+    "title": "B_FitArc",
+    "link": "/guide/B_FitArc",
+    "icon": "/media/svgs/med_B_FitArc.svg",
+    "tags": [
+      "曲线"
+    ]
+  },
+  {
+    "title": "B_GroupByBound",
+    "link": "/guide/B_GroupByBound",
+    "icon": "/media/svgs/med_B_GroupByBound.svg",
+    "tags": [
+      "分组"
+    ]
+  },
+  {
+    "title": "B_ImportLayerFromClipboard",
+    "link": "/guide/B_ImportLayerFromClipboard",
+    "icon": "/media/svgs/med_B_ImportLayerFromClipboard.svg",
+    "tags": [
+      "图层",
+      "工具"
+    ]
+  },
+  {
+    "title": "B_ImportPoints",
+    "link": "/guide/B_ImportPoints",
+    "icon": "/media/svgs/med_B_ImportPoints.svg",
+    "tags": [
+      "点",
+      "工具"
+    ]
+  },
+  {
+    "title": "B_LayerFullPath",
+    "link": "/guide/B_LayerFullPath",
+    "icon": "/media/svgs/med_B_LayerFullPath.svg",
+    "tags": [
+      "图层",
+      "工具"
+    ]
+  },
+  {
+    "title": "B_LayerNameReplace",
+    "link": "/guide/B_LayerNameReplace",
+    "icon": "/media/svgs/med_B_LayerNameReplace.svg",
+    "tags": [
+      "图层"
+    ]
+  },
+  {
+    "title": "B_LayerOnlyShow",
+    "link": "/guide/B_LayerOnlyShow",
+    "icon": "/media/svgs/med_B_LayerOnlyShow.svg",
+    "tags": [
+      "图层"
+    ]
+  },
+  {
+    "title": "B_Length",
+    "link": "/guide/B_Length",
+    "icon": "/media/svgs/med_B_Length.svg",
+    "tags": [
+      "分析",
+      "统计",
+      "曲线"
+    ]
+  },
+  {
+    "title": "B_Make2D",
+    "link": "/guide/B_Make2D",
+    "icon": "/media/svgs/med_B_Make2D.svg",
+    "tags": [
+      "曲线"
+    ]
+  },
+  {
+    "title": "B_ObjectAttributes",
+    "link": "/guide/B_ObjectAttributes",
+    "icon": "/media/svgs/med_B_ObjectAttributes.svg",
+    "tags": [
+      "物件"
+    ]
+  },
+  {
+    "title": "B_ObjectDrop",
+    "link": "/guide/B_ObjectDrop",
+    "icon": "/media/svgs/med_B_ObjectDrop.svg",
+    "tags": [
+      "物件",
+      "工具"
+    ]
+  },
+  {
+    "title": "B_ObjectFilter",
+    "link": "/guide/B_ObjectFilter",
+    "icon": "/media/svgs/med_B_ObjectFilter.svg",
+    "tags": [
+      "物件"
+    ]
+  },
+  {
+    "title": "B_ObjectNameReplace",
+    "link": "/guide/B_ObjectNameReplace",
+    "icon": "/media/svgs/med_B_ObjectNameReplace.svg",
+    "tags": [
+      "物件"
+    ]
+  },
+  {
+    "title": "B_ObjectShare",
+    "link": "/guide/B_ObjectShare",
+    "icon": "/media/svgs/med_B_ObjectShare.svg",
+    "tags": [
+      "物件",
+      "工具"
+    ]
+  },
+  {
+    "title": "B_ObjectTable",
+    "link": "/guide/B_ObjectTable",
+    "icon": "/media/svgs/med_B_ObjectTable.svg",
+    "tags": [
+      "物件"
+    ]
+  },
+  {
+    "title": "B_PlanarHeightTest",
+    "link": "/guide/B_PlanarHeightTest",
+    "icon": "/media/svgs/med_B_PlanarHeightTest.svg",
+    "tags": [
+      "分析",
+      "统计",
+      "曲面"
+    ]
+  },
+  {
+    "title": "B_Planarization",
+    "link": "/guide/B_Planarization",
+    "icon": "/media/svgs/med_B_Planarization.svg",
+    "tags": [
+      "变换",
+      "曲面"
+    ]
+  },
+  {
+    "title": "B_Project",
+    "link": "/guide/B_Project",
+    "icon": "/media/svgs/med_B_Project.svg",
+    "tags": [
+      "变换"
+    ]
+  },
+  {
+    "title": "B_ResetRtf",
+    "link": "/guide/B_ResetRtf",
+    "icon": "/media/svgs/med_B_ResetRtf.svg",
+    "tags": [
+      "文字",
+      "工具"
+    ]
+  },
+  {
+    "title": "B_Rotate",
+    "link": "/guide/B_Rotate",
+    "icon": "/media/svgs/med_B_Rotate.svg",
+    "tags": [
+      "变换"
+    ]
+  },
+  {
+    "title": "B_Scale",
+    "link": "/guide/B_Scale",
+    "icon": "/media/svgs/med_B_Scale.svg",
+    "tags": [
+      "变换"
+    ]
+  },
+  {
+    "title": "B_SelBlock",
+    "link": "/guide/B_SelBlock",
+    "icon": "/media/svgs/med_B_SelBlock.svg",
+    "tags": [
+      "选择"
+    ]
+  },
+  {
+    "title": "B_SelEdge",
+    "link": "/guide/B_SelEdge",
+    "icon": "/media/svgs/med_B_SelEdge-106.svg",
+    "tags": [
+      "选择",
+      "曲面"
+    ]
+  },
+  {
+    "title": "B_SelLength",
+    "link": "/guide/B_SelLength",
+    "icon": "/media/svgs/med_B_SelLength.svg",
+    "tags": [
+      "选择",
+      "曲线"
+    ]
+  },
+  {
+    "title": "B_SelObject",
+    "link": "/guide/B_SelObject",
+    "icon": "/media/svgs/med_Object.svg",
+    "tags": [
+      "选择",
+      "物件"
+    ]
+  },
+  {
+    "title": "B_SelSimilar",
+    "link": "/guide/B_SelSimilar",
+    "icon": "/media/svgs/med_B_SelSimilar.svg",
+    "tags": [
+      "选择",
+      "物件"
+    ]
+  },
+  {
+    "title": "B_SetMacro",
+    "link": "/guide/B_SetMacro",
+    "icon": "/media/svgs/med_B_SetMacro.svg",
+    "tags": [
+      "工具"
+    ]
+  },
+  {
+    "title": "B_SetSequence",
+    "link": "/guide/B_SetSequence",
+    "icon": "/media/svgs/med_Object.svg",
+    "tags": [
+      "物件"
+    ]
+  },
+  {
+    "title": "B_Slide",
+    "link": "/guide/B_Slide",
+    "icon": "/media/svgs/med_B_Slide.svg",
+    "tags": [
+      "变换"
+    ]
+  },
+  {
+    "title": "B_Text",
+    "link": "/guide/B_Text",
+    "icon": "/media/svgs/med_B_Text.svg",
+    "tags": [
+      "文字",
+      "工具"
+    ]
+  },
+  {
+    "title": "B_ToPolyline",
+    "link": "/guide/B_ToPolyline",
+    "icon": "/media/svgs/med_B_ToPolyline.svg",
+    "tags": [
+      "曲线",
+      "变换"
+    ]
+  },
+  {
+    "title": "B_UniformDirection",
+    "link": "/guide/B_UniformDirection",
+    "icon": "/media/svgs/med_B_UniformDirection.svg",
+    "tags": [
+      "变换",
+      "曲线",
+      "曲面"
+    ]
+  },
+  {
+    "title": "B_Volume",
+    "link": "/guide/B_Volume",
+    "icon": "/media/svgs/med_Analysis.svg",
+    "tags": [
+      "分析",
+      "统计"
+    ]
+  }
 ]

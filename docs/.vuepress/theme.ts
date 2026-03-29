@@ -14,7 +14,8 @@ export default hopeTheme({
     "fontawesome",
   ],
 
-  // logo: "/logo.svg",
+  logo: "/media/font-brand-light.svg",
+  logoDark: "/media/svgs/font.svg",
 
   // repo: "Brywmzl/MedBox",
   docsRepo: "Brywmzl/MedBox",
@@ -30,6 +31,7 @@ export default hopeTheme({
   footer: false,
 
   displayFooter: true,
+  lastUpdated: false,
   darkmode: "toggle",
   backToTop:false,
 
@@ -105,7 +107,7 @@ export default hopeTheme({
     // uncomment these if you want a pwa
     pwa: {
       favicon: "/favicon.ico",
-      cacheHTML: true,
+      cacheHTML: false,
       cachePic: true,
       appendBase: true,
       apple: {
