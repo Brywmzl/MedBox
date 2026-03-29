@@ -7,7 +7,7 @@ export default navbar([
   },
   {
     text: "命令",
-    link: "/guide/",
+    link: "/cmds/",
   },
   {
     text: "发布",

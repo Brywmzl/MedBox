@@ -1,4 +1,4 @@
-import { computed, defineComponent, h, onBeforeUnmount, ref, watch } from "vue";
+import { computed, defineComponent, h, nextTick, onBeforeUnmount, ref, watch } from "vue";
 import { usePageData, usePageFrontmatter, useRouteLocale, withBase } from "@vuepress/client";
 import commandIndex from "../../command-index.json";
 
@@ -72,6 +72,7 @@ const commandPagePaths = new Set(
 const COMMAND_SIDEBAR_CLASS = "has-command-sidebar";
 const COMMAND_SIDEBAR_RESIZING_CLASS = "is-resizing-command-sidebar";
 const COMMAND_SIDEBAR_STATE_KEY = "medbox-command-sidebar-state";
+const COMMAND_SIDEBAR_MOBILE_OFFSET_KEY = "--command-sidebar-mobile-offset";
 const COMMAND_SIDEBAR_MIN_WIDTH = 280;
 const COMMAND_SIDEBAR_MAX_WIDTH = 640;
 const COMMAND_FILTERS = [
@@ -174,22 +175,23 @@ export default defineComponent({
     const routeLocale = useRouteLocale();
     const panelElement = ref<HTMLElement | null>(null);
     const isResizing = ref(false);
+    let panelResizeObserver: ResizeObserver | null = null;
     let removeResizeListeners: (() => void) | null = null;
 
     const enabled = computed(() => {
       const path = pageData.value.path;
       const locale = routeLocale.value || "/";
-      const guideBasePath = `${locale}guide`;
-      const guideHomePaths = new Set([
-        guideBasePath,
-        `${guideBasePath}/`,
-        `${guideBasePath}.html`,
-        `${guideBasePath}/index.html`,
-        `${guideBasePath}/README.html`,
+      const cmdsBasePath = `${locale}cmds`;
+      const cmdsHomePaths = new Set([
+        cmdsBasePath,
+        `${cmdsBasePath}/`,
+        `${cmdsBasePath}.html`,
+        `${cmdsBasePath}/index.html`,
+        `${cmdsBasePath}/README.html`,
       ]);
 
-      if (path !== guideBasePath && path !== `${guideBasePath}.html` && !path.startsWith(`${guideBasePath}/`)) return false;
-      if (!guideHomePaths.has(path) && !commandPagePaths.has(path)) return false;
+      if (path !== cmdsBasePath && path !== `${cmdsBasePath}.html` && !path.startsWith(`${cmdsBasePath}/`)) return false;
+      if (!cmdsHomePaths.has(path) && !commandPagePaths.has(path)) return false;
 
       return frontmatter.value.home !== true;
     });
@@ -221,6 +223,19 @@ export default defineComponent({
       }
 
       document.documentElement.style.setProperty("--command-sidebar-width", `${clampSidebarWidth(value)}px`);
+    };
+
+    const syncMobileOffset = (): void => {
+      if (typeof document === "undefined" || typeof window === "undefined") return;
+
+      if (!enabled.value || !panelElement.value || window.innerWidth > 719) {
+        document.documentElement.style.removeProperty(COMMAND_SIDEBAR_MOBILE_OFFSET_KEY);
+
+        return;
+      }
+
+      const height = Math.ceil(panelElement.value.getBoundingClientRect().height + 12);
+      document.documentElement.style.setProperty(COMMAND_SIDEBAR_MOBILE_OFFSET_KEY, `${height}px`);
     };
 
     const stopResize = (): void => {
@@ -269,16 +284,43 @@ export default defineComponent({
     const handleWindowResize = (): void => {
       if (sidebarWidth.value === null) {
         syncSidebarWidth(null);
-
-        return;
       }
 
-      syncSidebarWidth(sidebarWidth.value);
+      if (sidebarWidth.value !== null) syncSidebarWidth(sidebarWidth.value);
+      syncMobileOffset();
     };
 
     watch(enabled, syncDocumentState, { immediate: true });
     watch(sidebarWidth, syncSidebarWidth, { immediate: true });
     watch([keyword, activeFilter, sidebarWidth], persistSidebarState, { immediate: true });
+    watch(
+      panelElement,
+      (element) => {
+        panelResizeObserver?.disconnect();
+        panelResizeObserver = null;
+
+        if (typeof ResizeObserver !== "undefined" && element) {
+          panelResizeObserver = new ResizeObserver(() => {
+            syncMobileOffset();
+          });
+          panelResizeObserver.observe(element);
+        }
+
+        void nextTick(() => {
+          syncMobileOffset();
+        });
+      },
+      { immediate: true }
+    );
+    watch(
+      [enabled, filteredItems],
+      () => {
+        void nextTick(() => {
+          syncMobileOffset();
+        });
+      },
+      { immediate: true }
+    );
 
     if (typeof window !== "undefined") {
       window.addEventListener("resize", handleWindowResize);
@@ -289,8 +331,13 @@ export default defineComponent({
         window.removeEventListener("resize", handleWindowResize);
       }
 
+      panelResizeObserver?.disconnect();
+      panelResizeObserver = null;
       stopResize();
       syncDocumentState(false);
+      if (typeof document !== "undefined") {
+        document.documentElement.style.removeProperty(COMMAND_SIDEBAR_MOBILE_OFFSET_KEY);
+      }
     });
 
     return () =>

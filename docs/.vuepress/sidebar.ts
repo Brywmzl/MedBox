@@ -6,10 +6,9 @@ const sortedCommandIndex = [...commandIndex].sort((left, right) =>
 );
 
 export default sidebar({
-  "/guide/": [
+  "/cmds/": [
     {
-      text: "命令目录",
-      icon: "book",
+      text: "命令",
       prefix: "",
       children: sortedCommandIndex.map((item) => ({
         text: item.title,

@@ -1,22 +1,21 @@
 ---
-title: 命令索引
-icon: fa-solid fa-book
+title: 命令
 index: false
 article: false
 ---
 
-# MedBox 命令文档
+# 命令
 
-`docs/guide/` 目录现在只放命令 `.md` 文件，不再按分类拆文件夹。
+`docs/cmds/` 目录现在只放命令 `.md` 文件，不再按分类拆文件夹。
 
 左侧命令列表的搜索和标签筛选，统一读取 `docs/.vuepress/command-index.json` 里的 `tags` 字段；一个命令可以挂多个标签，不再受单一分类限制。
 
 ## 维护规则
 
-- `docs/guide/` 根目录只保留命令 `.md` 和当前这个 `README.md`
+- `docs/cmds/` 根目录只保留命令 `.md` 和当前这个 `README.md`
 - 命令标签统一写在每个命令文档的 frontmatter `tag:` 中
 - 左侧筛选标签统一维护在 `docs/.vuepress/command-index.json` 的 `tags`
-- 命令插图统一放在 `docs/.vuepress/public/media/guide/`
+- 命令相关图片统一放在 `docs/.vuepress/public/media/`
 
 ## 新增命令模板
 
