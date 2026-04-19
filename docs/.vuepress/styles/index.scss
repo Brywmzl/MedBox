@@ -1250,12 +1250,20 @@ html.is-resizing-command-sidebar body {
 html.has-command-sidebar {
   .vp-page {
     position: relative !important;
+    // 关键：确保主容器也不产生干扰
+    transform: none !important;
+    contain: none !important;
   }
   
   // 核心：解除中间正文的骨架定位限制，让绝对定位能穿透到最外层
   .theme-hope-content {
     position: static !important;
     overflow: visible !important;
+    // 关键：解除父级对 position: fixed 的封印 (层叠上下文)
+    transform: none !important;
+    filter: none !important;
+    perspective: none !important;
+    contain: none !important;
 
     // 全球级暴力定位：无论它在 HTML 的哪个角落，都强行把它拉出正文区并固定在右侧
     #toc,
