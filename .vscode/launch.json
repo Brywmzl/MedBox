@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "MedBox: Docs Debug",
+      "type": "node-terminal",
+      "request": "launch",
+      "command": "pnpm.cmd docs:dev",
+      "serverReadyAction": {
+        "action": "debugWithEdge",
+        "pattern": "http://localhost:(\\d+)(?:/MedBox/)?",
+        "uriFormat": "http://localhost:%s/MedBox/",
+        "webRoot": "${workspaceFolder}"
+      }
+    }
+  ]
+}

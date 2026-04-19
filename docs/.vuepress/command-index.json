@@ -1,7 +1,8 @@
 [
   {
     "title": "B_AddAngularDimensionByNode",
-    "link": "/cmds/B_AddAngularDimensionByNode",
+    "label": "标注节点角度",
+    "link": "/guide/B_AddAngularDimensionByNode",
     "icon": "/media/svgs/med_B_AddAngularDimensionByNode.svg",
     "tags": [
       "标注",
@@ -10,7 +11,8 @@
   },
   {
     "title": "B_AddAxisNumber",
-    "link": "/cmds/B_AddAxisNumber",
+    "label": "创建轴号",
+    "link": "/guide/B_AddAxisNumber",
     "icon": "/media/svgs/med_B_AddAxisNumber.svg",
     "tags": [
       "标注"
@@ -18,7 +20,8 @@
   },
   {
     "title": "B_AddDot",
-    "link": "/cmds/B_AddDot",
+    "label": "注解点标注",
+    "link": "/guide/B_AddDot",
     "icon": "/media/svgs/med_B_AddDot.svg",
     "tags": [
       "标注",
@@ -27,7 +30,8 @@
   },
   {
     "title": "B_AddDotByDistance",
-    "link": "/cmds/B_AddDotByDistance",
+    "label": "距离点标注",
+    "link": "/guide/B_AddDotByDistance",
     "icon": "/media/svgs/med_B_AddDotByDistance.svg",
     "tags": [
       "标注",
@@ -36,7 +40,8 @@
   },
   {
     "title": "B_AddDotByLength",
-    "link": "/cmds/B_AddDotByLength",
+    "label": "长度点标注",
+    "link": "/guide/B_AddDotByLength",
     "icon": "/media/svgs/med_B_AddDotByLength.svg",
     "tags": [
       "标注",
@@ -45,7 +50,8 @@
   },
   {
     "title": "B_AddDotByLocation",
-    "link": "/cmds/B_AddDotByLocation",
+    "label": "坐标点标注",
+    "link": "/guide/B_AddDotByLocation",
     "icon": "/media/svgs/med_B_AddDotByLocation.svg",
     "tags": [
       "标注",
@@ -54,7 +60,8 @@
   },
   {
     "title": "B_AddLinearDimensionBy3Pt",
-    "link": "/cmds/B_AddLinearDimensionBy3Pt",
+    "label": "三点线性标注",
+    "link": "/guide/B_AddLinearDimensionBy3Pt",
     "icon": "/media/svgs/med_B_AddLinearDimensionBy3Pt.svg",
     "tags": [
       "标注"
@@ -62,7 +69,8 @@
   },
   {
     "title": "B_AddLinearDimensionByArc",
-    "link": "/cmds/B_AddLinearDimensionByArc",
+    "label": "标注弧长",
+    "link": "/guide/B_AddLinearDimensionByArc",
     "icon": "/media/svgs/med_B_AddLinearDimensionByArc.svg",
     "tags": [
       "标注",
@@ -71,7 +79,8 @@
   },
   {
     "title": "B_AddLinearDimensionByDiagonal",
-    "link": "/cmds/B_AddLinearDimensionByDiagonal",
+    "label": "标注对角线",
+    "link": "/guide/B_AddLinearDimensionByDiagonal",
     "icon": "/media/svgs/med_B_AddLinearDimensionByDiagonal.svg",
     "tags": [
       "标注",
@@ -80,7 +89,8 @@
   },
   {
     "title": "B_AddLinearDimensionByInterior",
-    "link": "/cmds/B_AddLinearDimensionByInterior",
+    "label": "标注内角边缘",
+    "link": "/guide/B_AddLinearDimensionByInterior",
     "icon": "/media/svgs/med_B_AddLinearDimensionByInterior.svg",
     "tags": [
       "标注",
@@ -89,7 +99,8 @@
   },
   {
     "title": "B_AddLinearDimensionByNaked",
-    "link": "/cmds/B_AddLinearDimensionByNaked",
+    "label": "标注裸露边缘",
+    "link": "/guide/B_AddLinearDimensionByNaked",
     "icon": "/media/svgs/med_B_AddLinearDimensionByNaked.svg",
     "tags": [
       "标注",
@@ -98,7 +109,8 @@
   },
   {
     "title": "B_AddRadialDimension",
-    "link": "/cmds/B_AddRadialDimension",
+    "label": "标注径向尺寸",
+    "link": "/guide/B_AddRadialDimension",
     "icon": "/media/svgs/med_B_AddRadialDimension.svg",
     "tags": [
       "标注",
@@ -107,7 +119,8 @@
   },
   {
     "title": "B_Area",
-    "link": "/cmds/B_Area",
+    "label": "面积",
+    "link": "/guide/B_Area",
     "icon": "/media/svgs/med_B_Area.svg",
     "tags": [
       "分析",
@@ -116,7 +129,8 @@
   },
   {
     "title": "B_CopyLayerToClipboard",
-    "link": "/cmds/B_CopyLayerToClipboard",
+    "label": "复制图层",
+    "link": "/guide/B_CopyLayerToClipboard",
     "icon": "/media/svgs/med_B_CopyLayerToClipboard.svg",
     "tags": [
       "图层",
@@ -125,7 +139,8 @@
   },
   {
     "title": "B_CornerPin",
-    "link": "/cmds/B_CornerPin",
+    "label": "边角固定",
+    "link": "/guide/B_CornerPin",
     "icon": "/media/svgs/med_B_CornerPin.svg",
     "tags": [
       "变换",
@@ -134,7 +149,8 @@
   },
   {
     "title": "B_CurveSnap",
-    "link": "/cmds/B_CurveSnap",
+    "label": "曲线吸附",
+    "link": "/guide/B_CurveSnap",
     "icon": "/media/svgs/med_B_CurveSnap.svg",
     "tags": [
       "变换",
@@ -143,7 +159,8 @@
   },
   {
     "title": "B_ExportLocation",
-    "link": "/cmds/B_ExportLocation",
+    "label": "导出点",
+    "link": "/guide/B_ExportLocation",
     "icon": "/media/svgs/med_B_ExportLocation.svg",
     "tags": [
       "点",
@@ -152,7 +169,8 @@
   },
   {
     "title": "B_FindText",
-    "link": "/cmds/B_FindText",
+    "label": "查找文本",
+    "link": "/guide/B_FindText",
     "icon": "/media/svgs/med_B_FindText.svg",
     "tags": [
       "文字"
@@ -160,7 +178,8 @@
   },
   {
     "title": "B_FindTextFromInsertion",
-    "link": "/cmds/B_FindTextFromInsertion",
+    "label": "从图块查找文本",
+    "link": "/guide/B_FindTextFromInsertion",
     "icon": "/media/svgs/med_B_FindTextFromInsertion.svg",
     "tags": [
       "文字"
@@ -168,7 +187,8 @@
   },
   {
     "title": "B_FitArc",
-    "link": "/cmds/B_FitArc",
+    "label": "曲线拟弧",
+    "link": "/guide/B_FitArc",
     "icon": "/media/svgs/med_B_FitArc.svg",
     "tags": [
       "曲线"
@@ -176,7 +196,8 @@
   },
   {
     "title": "B_GroupByBound",
-    "link": "/cmds/B_GroupByBound",
+    "label": "群组（区域）",
+    "link": "/guide/B_GroupByBound",
     "icon": "/media/svgs/med_B_GroupByBound.svg",
     "tags": [
       "分组"
@@ -184,7 +205,8 @@
   },
   {
     "title": "B_ImportLayerFromClipboard",
-    "link": "/cmds/B_ImportLayerFromClipboard",
+    "label": "导入图层",
+    "link": "/guide/B_ImportLayerFromClipboard",
     "icon": "/media/svgs/med_B_ImportLayerFromClipboard.svg",
     "tags": [
       "图层",
@@ -193,7 +215,8 @@
   },
   {
     "title": "B_ImportPoints",
-    "link": "/cmds/B_ImportPoints",
+    "label": "导入点",
+    "link": "/guide/B_ImportPoints",
     "icon": "/media/svgs/med_B_ImportPoints.svg",
     "tags": [
       "点",
@@ -202,7 +225,8 @@
   },
   {
     "title": "B_LayerFullPath",
-    "link": "/cmds/B_LayerFullPath",
+    "label": "图层完整路径",
+    "link": "/guide/B_LayerFullPath",
     "icon": "/media/svgs/med_B_LayerFullPath.svg",
     "tags": [
       "图层",
@@ -211,7 +235,8 @@
   },
   {
     "title": "B_LayerNameReplace",
-    "link": "/cmds/B_LayerNameReplace",
+    "label": "图层名称替换",
+    "link": "/guide/B_LayerNameReplace",
     "icon": "/media/svgs/med_B_LayerNameReplace.svg",
     "tags": [
       "图层"
@@ -219,7 +244,8 @@
   },
   {
     "title": "B_LayerOnlyShow",
-    "link": "/cmds/B_LayerOnlyShow",
+    "label": "图层独显",
+    "link": "/guide/B_LayerOnlyShow",
     "icon": "/media/svgs/med_B_LayerOnlyShow.svg",
     "tags": [
       "图层"
@@ -227,7 +253,8 @@
   },
   {
     "title": "B_Length",
-    "link": "/cmds/B_Length",
+    "label": "长度",
+    "link": "/guide/B_Length",
     "icon": "/media/svgs/med_B_Length.svg",
     "tags": [
       "分析",
@@ -237,7 +264,8 @@
   },
   {
     "title": "B_Make2D",
-    "link": "/cmds/B_Make2D",
+    "label": "切剖面",
+    "link": "/guide/B_Make2D",
     "icon": "/media/svgs/med_B_Make2D.svg",
     "tags": [
       "曲线"
@@ -245,7 +273,8 @@
   },
   {
     "title": "B_ObjectAttributes",
-    "link": "/cmds/B_ObjectAttributes",
+    "label": "物件属性",
+    "link": "/guide/B_ObjectAttributes",
     "icon": "/media/svgs/med_B_ObjectAttributes.svg",
     "tags": [
       "物件"
@@ -253,7 +282,8 @@
   },
   {
     "title": "B_ObjectDrop",
-    "link": "/cmds/B_ObjectDrop",
+    "label": "物件投送",
+    "link": "/guide/B_ObjectDrop",
     "icon": "/media/svgs/med_B_ObjectDrop.svg",
     "tags": [
       "物件",
@@ -262,7 +292,8 @@
   },
   {
     "title": "B_ObjectFilter",
-    "link": "/cmds/B_ObjectFilter",
+    "label": "物件过滤",
+    "link": "/guide/B_ObjectFilter",
     "icon": "/media/svgs/med_B_ObjectFilter.svg",
     "tags": [
       "物件"
@@ -270,7 +301,8 @@
   },
   {
     "title": "B_ObjectNameReplace",
-    "link": "/cmds/B_ObjectNameReplace",
+    "label": "物件名称替换",
+    "link": "/guide/B_ObjectNameReplace",
     "icon": "/media/svgs/med_B_ObjectNameReplace.svg",
     "tags": [
       "物件"
@@ -278,7 +310,8 @@
   },
   {
     "title": "B_ObjectShare",
-    "link": "/cmds/B_ObjectShare",
+    "label": "物件分享",
+    "link": "/guide/B_ObjectShare",
     "icon": "/media/svgs/med_B_ObjectShare.svg",
     "tags": [
       "物件",
@@ -287,7 +320,8 @@
   },
   {
     "title": "B_ObjectTable",
-    "link": "/cmds/B_ObjectTable",
+    "label": "物件表格",
+    "link": "/guide/B_ObjectTable",
     "icon": "/media/svgs/med_B_ObjectTable.svg",
     "tags": [
       "物件"
@@ -295,7 +329,8 @@
   },
   {
     "title": "B_PlanarHeightTest",
-    "link": "/cmds/B_PlanarHeightTest",
+    "label": "标注曲面弦高",
+    "link": "/guide/B_PlanarHeightTest",
     "icon": "/media/svgs/med_B_PlanarHeightTest.svg",
     "tags": [
       "分析",
@@ -305,7 +340,8 @@
   },
   {
     "title": "B_Planarization",
-    "link": "/cmds/B_Planarization",
+    "label": "平面化",
+    "link": "/guide/B_Planarization",
     "icon": "/media/svgs/med_B_Planarization.svg",
     "tags": [
       "变换",
@@ -314,7 +350,8 @@
   },
   {
     "title": "B_Project",
-    "link": "/cmds/B_Project",
+    "label": "拍平",
+    "link": "/guide/B_Project",
     "icon": "/media/svgs/med_B_Project.svg",
     "tags": [
       "变换"
@@ -322,7 +359,8 @@
   },
   {
     "title": "B_ResetRtf",
-    "link": "/cmds/B_ResetRtf",
+    "label": "重置富文本",
+    "link": "/guide/B_ResetRtf",
     "icon": "/media/svgs/med_B_ResetRtf.svg",
     "tags": [
       "文字",
@@ -331,7 +369,8 @@
   },
   {
     "title": "B_Rotate",
-    "link": "/cmds/B_Rotate",
+    "label": "旋转",
+    "link": "/guide/B_Rotate",
     "icon": "/media/svgs/med_B_Rotate.svg",
     "tags": [
       "变换"
@@ -339,7 +378,8 @@
   },
   {
     "title": "B_Scale",
-    "link": "/cmds/B_Scale",
+    "label": "缩放",
+    "link": "/guide/B_Scale",
     "icon": "/media/svgs/med_B_Scale.svg",
     "tags": [
       "变换"
@@ -347,7 +387,8 @@
   },
   {
     "title": "B_SelBlock",
-    "link": "/cmds/B_SelBlock",
+    "label": "选取图块",
+    "link": "/guide/B_SelBlock",
     "icon": "/media/svgs/med_B_SelBlock.svg",
     "tags": [
       "选择"
@@ -355,7 +396,8 @@
   },
   {
     "title": "B_SelEdge",
-    "link": "/cmds/B_SelEdge",
+    "label": "选取边缘",
+    "link": "/guide/B_SelEdge",
     "icon": "/media/svgs/med_B_SelEdge-106.svg",
     "tags": [
       "选择",
@@ -364,7 +406,8 @@
   },
   {
     "title": "B_SelLength",
-    "link": "/cmds/B_SelLength",
+    "label": "以长度选取曲线",
+    "link": "/guide/B_SelLength",
     "icon": "/media/svgs/med_B_SelLength.svg",
     "tags": [
       "选择",
@@ -373,7 +416,8 @@
   },
   {
     "title": "B_SelObject",
-    "link": "/cmds/B_SelObject",
+    "label": "选取物件",
+    "link": "/guide/B_SelObject",
     "icon": "/media/svgs/med_Object.svg",
     "tags": [
       "选择",
@@ -382,7 +426,8 @@
   },
   {
     "title": "B_SelSimilar",
-    "link": "/cmds/B_SelSimilar",
+    "label": "选取相似",
+    "link": "/guide/B_SelSimilar",
     "icon": "/media/svgs/med_B_SelSimilar.svg",
     "tags": [
       "选择",
@@ -391,7 +436,8 @@
   },
   {
     "title": "B_SetMacro",
-    "link": "/cmds/B_SetMacro",
+    "label": "设置快捷键",
+    "link": "/guide/B_SetMacro",
     "icon": "/media/svgs/med_B_SetMacro.svg",
     "tags": [
       "工具"
@@ -399,7 +445,8 @@
   },
   {
     "title": "B_SetSequence",
-    "link": "/cmds/B_SetSequence",
+    "label": "设置物件顺序",
+    "link": "/guide/B_SetSequence",
     "icon": "/media/svgs/med_Object.svg",
     "tags": [
       "物件"
@@ -407,7 +454,8 @@
   },
   {
     "title": "B_Slide",
-    "link": "/cmds/B_Slide",
+    "label": "滑动",
+    "link": "/guide/B_Slide",
     "icon": "/media/svgs/med_B_Slide.svg",
     "tags": [
       "变换"
@@ -415,7 +463,8 @@
   },
   {
     "title": "B_Text",
-    "link": "/cmds/B_Text",
+    "label": "文本",
+    "link": "/guide/B_Text",
     "icon": "/media/svgs/med_B_Text.svg",
     "tags": [
       "文字",
@@ -424,7 +473,8 @@
   },
   {
     "title": "B_ToPolyline",
-    "link": "/cmds/B_ToPolyline",
+    "label": "曲线拉直",
+    "link": "/guide/B_ToPolyline",
     "icon": "/media/svgs/med_B_ToPolyline.svg",
     "tags": [
       "曲线",
@@ -433,7 +483,8 @@
   },
   {
     "title": "B_UniformDirection",
-    "link": "/cmds/B_UniformDirection",
+    "label": "统一方向",
+    "link": "/guide/B_UniformDirection",
     "icon": "/media/svgs/med_B_UniformDirection.svg",
     "tags": [
       "变换",
@@ -443,7 +494,8 @@
   },
   {
     "title": "B_Volume",
-    "link": "/cmds/B_Volume",
+    "label": "体积",
+    "link": "/guide/B_Volume",
     "icon": "/media/svgs/med_Analysis.svg",
     "tags": [
       "分析",

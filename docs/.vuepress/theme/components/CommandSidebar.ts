@@ -1,9 +1,10 @@
-import { computed, defineComponent, h, nextTick, onBeforeUnmount, ref, watch } from "vue";
+import { Fragment, computed, defineComponent, h, nextTick, onBeforeUnmount, ref, watch } from "vue";
 import { usePageData, usePageFrontmatter, useRouteLocale, withBase } from "@vuepress/client";
 import commandIndex from "../../command-index.json";
 
 type CommandItem = {
   title: string;
+  label?: string;
   tags?: string[];
   link: string;
   icon: string;
@@ -11,6 +12,7 @@ type CommandItem = {
 
 type NormalizedCommandItem = {
   title: string;
+  label: string;
   tags: string[];
   link: string;
   icon: string;
@@ -28,19 +30,19 @@ const normalizeTags = (value: unknown): string[] => {
 };
 
 const PREFERRED_COMMAND_TAGS = [
-  "\u70b9",
-  "\u66f2\u7ebf",
-  "\u66f2\u9762",
-  "\u6807\u6ce8",
-  "\u9009\u62e9",
-  "\u53d8\u6362",
-  "\u7269\u4ef6",
-  "\u56fe\u5c42",
-  "\u6587\u5b57",
-  "\u5206\u7ec4",
-  "\u5de5\u5177",
-  "\u7edf\u8ba1",
-  "\u5206\u6790",
+  "点",
+  "曲线",
+  "曲面",
+  "标注",
+  "选择",
+  "变换",
+  "物件",
+  "图层",
+  "文字",
+  "分组",
+  "工具",
+  "统计",
+  "分析",
 ];
 
 const sortByLabel = (left: string, right: string): number =>
@@ -49,17 +51,19 @@ const sortByLabel = (left: string, right: string): number =>
 const commandItems = (commandIndex as CommandItem[])
   .map<NormalizedCommandItem>((item) => {
     const title = normalizeText(item.title);
+    const label = normalizeText(item.label || item.title);
     const link = normalizeText(item.link);
     const icon = normalizeText(item.icon);
     const tags = normalizeTags(item.tags);
 
     return {
       title,
+      label,
       tags,
       link,
       icon,
       normalizedTags: tags.map((tag) => normalizeKey(tag)),
-      normalizedSearchText: `${title} ${tags.join(" ")}`.toLowerCase(),
+      normalizedSearchText: `${label} ${title} ${tags.join(" ")}`.toLowerCase(),
     };
   })
   .filter((item) => Boolean(item.title) && Boolean(item.link))
@@ -70,13 +74,15 @@ const commandPagePaths = new Set(
 );
 
 const COMMAND_SIDEBAR_CLASS = "has-command-sidebar";
+const COMMAND_SIDEBAR_COLLAPSED_CLASS = "is-command-sidebar-collapsed";
 const COMMAND_SIDEBAR_RESIZING_CLASS = "is-resizing-command-sidebar";
 const COMMAND_SIDEBAR_STATE_KEY = "medbox-command-sidebar-state";
+const COMMAND_SIDEBAR_PANEL_ID = "medbox-command-sidebar";
 const COMMAND_SIDEBAR_MOBILE_OFFSET_KEY = "--command-sidebar-mobile-offset";
 const COMMAND_SIDEBAR_MIN_WIDTH = 280;
 const COMMAND_SIDEBAR_MAX_WIDTH = 640;
 const COMMAND_FILTERS = [
-  { key: "all", label: "\u5168\u90e8" },
+  { key: "all", label: "All" },
   ...Array.from(new Set([...PREFERRED_COMMAND_TAGS, ...commandItems.flatMap((item) => item.tags)]))
     .sort((left, right) => {
       const leftIndex = PREFERRED_COMMAND_TAGS.indexOf(left);
@@ -100,6 +106,7 @@ const matchFilter = (item: NormalizedCommandItem, filterKey: string): boolean =>
 const sharedKeyword = ref("");
 const sharedActiveFilter = ref("all");
 const sharedSidebarWidth = ref<number | null>(null);
+const sharedSidebarCollapsed = ref(false);
 let hasRestoredSidebarState = false;
 
 const resolveSidebarWidthBounds = (): { min: number; max: number } => {
@@ -135,7 +142,12 @@ const restoreSidebarState = (): void => {
 
     if (!rawState) return;
 
-    const parsedState = JSON.parse(rawState) as { filter?: string; keyword?: string; width?: number };
+    const parsedState = JSON.parse(rawState) as {
+      filter?: string;
+      keyword?: string;
+      width?: number;
+      collapsed?: boolean;
+    };
 
     if (typeof parsedState.keyword === "string") sharedKeyword.value = parsedState.keyword;
     if (typeof parsedState.filter === "string" && COMMAND_FILTERS.some((item) => item.key === parsedState.filter)) {
@@ -158,6 +170,7 @@ const persistSidebarState = (): void => {
       keyword: sharedKeyword.value,
       filter: sharedActiveFilter.value,
       width: sharedSidebarWidth.value,
+      collapsed: sharedSidebarCollapsed.value,
     })
   );
 };
@@ -170,6 +183,7 @@ export default defineComponent({
     const keyword = sharedKeyword;
     const activeFilter = sharedActiveFilter;
     const sidebarWidth = sharedSidebarWidth;
+    const isCollapsed = sharedSidebarCollapsed;
     const pageData = usePageData();
     const frontmatter = usePageFrontmatter();
     const routeLocale = useRouteLocale();
@@ -181,7 +195,7 @@ export default defineComponent({
     const enabled = computed(() => {
       const path = pageData.value.path;
       const locale = routeLocale.value || "/";
-      const cmdsBasePath = `${locale}cmds`;
+      const cmdsBasePath = `${locale}guide`;
       const cmdsHomePaths = new Set([
         cmdsBasePath,
         `${cmdsBasePath}/`,
@@ -207,10 +221,11 @@ export default defineComponent({
       });
     });
 
-    const syncDocumentState = (isEnabled: boolean): void => {
+    const syncDocumentState = (isEnabled: boolean, collapsed: boolean): void => {
       if (typeof document === "undefined") return;
 
       document.documentElement.classList.toggle(COMMAND_SIDEBAR_CLASS, isEnabled);
+      document.documentElement.classList.toggle(COMMAND_SIDEBAR_COLLAPSED_CLASS, isEnabled && collapsed);
     };
 
     const syncSidebarWidth = (value: number | null): void => {
@@ -228,7 +243,7 @@ export default defineComponent({
     const syncMobileOffset = (): void => {
       if (typeof document === "undefined" || typeof window === "undefined") return;
 
-      if (!enabled.value || !panelElement.value || window.innerWidth > 719) {
+      if (!enabled.value || isCollapsed.value || !panelElement.value || window.innerWidth > 719) {
         document.documentElement.style.removeProperty(COMMAND_SIDEBAR_MOBILE_OFFSET_KEY);
 
         return;
@@ -249,12 +264,23 @@ export default defineComponent({
       removeResizeListeners = null;
     };
 
+    const setCollapsed = (value: boolean): void => {
+      if (isCollapsed.value === value) return;
+
+      if (value) stopResize();
+      isCollapsed.value = value;
+
+      void nextTick(() => {
+        syncMobileOffset();
+      });
+    };
+
     const updateSidebarWidth = (clientX: number): void => {
       sidebarWidth.value = clampSidebarWidth(clientX);
     };
 
     const handleResizeStart = (event: PointerEvent): void => {
-      if (typeof window === "undefined" || event.button !== 0) return;
+      if (typeof window === "undefined" || event.button !== 0 || isCollapsed.value) return;
 
       event.preventDefault();
       isResizing.value = true;
@@ -290,9 +316,15 @@ export default defineComponent({
       syncMobileOffset();
     };
 
-    watch(enabled, syncDocumentState, { immediate: true });
+    watch(
+      [enabled, isCollapsed],
+      ([isEnabled, collapsed]) => {
+        syncDocumentState(isEnabled, collapsed);
+      },
+      { immediate: true }
+    );
     watch(sidebarWidth, syncSidebarWidth, { immediate: true });
-    watch([keyword, activeFilter, sidebarWidth], persistSidebarState, { immediate: true });
+    watch([keyword, activeFilter, sidebarWidth, isCollapsed], persistSidebarState, { immediate: true });
     watch(
       panelElement,
       (element) => {
@@ -313,7 +345,7 @@ export default defineComponent({
       { immediate: true }
     );
     watch(
-      [enabled, filteredItems],
+      [enabled, filteredItems, isCollapsed],
       () => {
         void nextTick(() => {
           syncMobileOffset();
@@ -334,7 +366,7 @@ export default defineComponent({
       panelResizeObserver?.disconnect();
       panelResizeObserver = null;
       stopResize();
-      syncDocumentState(false);
+      syncDocumentState(false, false);
       if (typeof document !== "undefined") {
         document.documentElement.style.removeProperty(COMMAND_SIDEBAR_MOBILE_OFFSET_KEY);
       }
@@ -343,91 +375,120 @@ export default defineComponent({
     return () =>
       h(
         "aside",
-        {
-          ref: panelElement,
-          class: ["command-sidebar-panel", { "is-hidden": !enabled.value }],
-          "aria-hidden": enabled.value ? "false" : "true",
-        },
-        [
-          h("div", { class: "command-sidebar-controls" }, [
-            h("div", { class: "command-sidebar-search" }, [
-              h("span", { class: "command-sidebar-search-icon", "aria-hidden": "true" }),
-              h("input", {
-                class: "command-sidebar-input",
-                type: "text",
-                value: keyword.value,
-                placeholder: "\u641c\u7d22\u547d\u4ee4",
-                autocomplete: "off",
-                spellcheck: "false",
-                onInput: (event: Event) => {
-                  keyword.value = (event.target as HTMLInputElement).value;
-                },
-              }),
+          {
+            id: COMMAND_SIDEBAR_PANEL_ID,
+            ref: panelElement,
+            class: ["command-sidebar-panel", { "is-hidden": !enabled.value, "is-collapsed": isCollapsed.value }],
+            "aria-hidden": !enabled.value || isCollapsed.value ? "true" : "false",
+          },
+          [
+            h("div", { class: "command-sidebar-controls" }, [
+              h("div", { class: "command-sidebar-search" }, [
+                h("span", { class: "command-sidebar-search-icon", "aria-hidden": "true" }),
+                h("input", {
+                  class: "command-sidebar-input",
+                  type: "text",
+                  value: keyword.value,
+                  placeholder: "\u641c\u7d22\u547d\u4ee4",
+                  autocomplete: "off",
+                  spellcheck: "false",
+                  onInput: (event: Event) => {
+                    keyword.value = (event.target as HTMLInputElement).value;
+                  },
+                }),
+              ]),
+              h(
+                "div",
+                { class: "command-sidebar-filters", role: "tablist", "aria-label": "\u547d\u4ee4\u7b5b\u9009" },
+                COMMAND_FILTERS.map((filterItem) =>
+                  h(
+                    "button",
+                    {
+                      type: "button",
+                      class: ["command-sidebar-filter", { active: activeFilter.value === filterItem.key }],
+                      "aria-pressed": activeFilter.value === filterItem.key ? "true" : "false",
+                      onClick: () => {
+                        activeFilter.value = filterItem.key;
+                      },
+                    },
+                    filterItem.label
+                  )
+                )
+              ),
             ]),
             h(
               "div",
-              { class: "command-sidebar-filters", role: "tablist", "aria-label": "\u547d\u4ee4\u7b5b\u9009" },
-              COMMAND_FILTERS.map((filterItem) =>
-                h(
-                  "button",
-                  {
-                    type: "button",
-                    class: ["command-sidebar-filter", { active: activeFilter.value === filterItem.key }],
-                    "aria-pressed": activeFilter.value === filterItem.key ? "true" : "false",
-                    onClick: () => {
-                      activeFilter.value = filterItem.key;
-                    },
-                  },
-                  filterItem.label
-                )
-              )
-            ),
-          ]),
-          h(
-            "div",
-            { class: "command-sidebar-list" },
-            filteredItems.value.length > 0
-              ? filteredItems.value.map((item) => {
-                  const active = pageData.value.path === item.link || pageData.value.path === `${item.link}.html`;
+              { class: "command-sidebar-list" },
+              filteredItems.value.length > 0
+                ? filteredItems.value.map((item) => {
+                    const active = pageData.value.path === item.link || pageData.value.path === `${item.link}.html`;
 
-                  return h(
-                    "a",
-                    {
-                      class: ["command-sidebar-item", { active }],
-                      href: withBase(item.link),
-                      "aria-current": active ? "page" : undefined,
-                    },
-                    [
-                      h("img", {
-                        class: "command-sidebar-item-icon",
-                        src: withBase(item.icon),
-                        alt: "",
-                        loading: "lazy",
-                        decoding: "async",
-                      }),
-                      h("span", { class: "command-sidebar-item-text" }, item.title),
-                    ]
-                  );
-                })
-              : [
-                  h("div", { class: "command-sidebar-empty" }, [
-                    h("p", { class: "command-sidebar-empty-title" }, "\u672a\u627e\u5230\u5339\u914d\u7684\u547d\u4ee4"),
-                    h(
-                      "p",
-                      { class: "command-sidebar-empty-text" },
-                      "\u8bd5\u8bd5\u66f4\u6362\u5173\u952e\u8bcd\u6216\u5207\u6362\u7b5b\u9009\u6807\u7b7e"
-                    ),
-                  ]),
-                ]
-          ),
-          h("div", {
-            class: ["command-sidebar-resize-handle", { active: isResizing.value }],
-            role: "separator",
-            "aria-orientation": "vertical",
-            "aria-label": "Adjust command list width",
-            onPointerdown: handleResizeStart,
-          }),
-        ]
-      );
+                    return h(
+                      "a",
+                      {
+                        class: ["command-sidebar-item", { active }],
+                        href: withBase(item.link),
+                        "aria-current": active ? "page" : undefined,
+                      },
+                      [
+                        h("img", {
+                          class: "command-sidebar-item-icon",
+                          src: withBase(item.icon),
+                          alt: "",
+                          loading: "lazy",
+                          decoding: "async",
+                        }),
+                        h("div", { class: "command-sidebar-item-text-wrapper" }, [
+                          h("span", { class: "command-sidebar-item-label" }, item.label),
+                          h("span", { class: "command-sidebar-item-title" }, item.title),
+                        ]),
+                        h("span", {
+                          class: "command-sidebar-item-copy",
+                          title: "复制命令",
+                          onClick: (e: Event) => {
+                            e.preventDefault();
+                            e.stopPropagation();
+                            if (typeof navigator !== "undefined" && navigator.clipboard) {
+                              navigator.clipboard.writeText(item.title);
+                            }
+                          }
+                        }, [
+                          h("svg", {
+                            xmlns: "http://www.w3.org/2000/svg",
+                            viewBox: "0 0 24 24",
+                            fill: "none",
+                            stroke: "currentColor",
+                            "stroke-width": "2",
+                            "stroke-linecap": "round",
+                            "stroke-linejoin": "round",
+                            class: "command-sidebar-copy-icon"
+                          }, [
+                            h("rect", { x: "9", y: "9", width: "13", height: "13", rx: "2", ry: "2" }),
+                            h("path", { d: "M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" })
+                          ])
+                        ])
+                      ]
+                    );
+                  })
+                : [
+                    h("div", { class: "command-sidebar-empty" }, [
+                      h("p", { class: "command-sidebar-empty-title" }, "\u672a\u627e\u5230\u5339\u914d\u7684\u547d\u4ee4"),
+                      h(
+                        "p",
+                        { class: "command-sidebar-empty-text" },
+                        "\u8bd5\u8bd5\u66f4\u6362\u5173\u952e\u8bcd\u6216\u5207\u6362\u7b5b\u9009\u6807\u7b7e"
+                      ),
+                    ]),
+                  ]
+            ),
+            h("div", {
+              class: ["command-sidebar-resize-handle", { active: isResizing.value }],
+              role: "separator",
+              "aria-orientation": "vertical",
+              "aria-label": "Adjust command list width",
+              onPointerdown: handleResizeStart,
+            }),
+          ]
+        );
   },
 });

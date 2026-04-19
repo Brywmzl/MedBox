@@ -1,0 +1,28 @@
+---
+icon: /media/svgs/med_B_AddLinearDimensionBy3Pt.svg
+cmd: B_AddLinearDimensionBy3Pt
+title: 三点线性标注
+tag:
+  - 标注
+---
+
+# B_AddLinearDimensionBy3Pt
+
+## 功能说明
+
+通过三个点直接创建线性尺寸标注。
+
+## 源码要点
+
+- 输入：按提示拾取点位
+- 输出：添加新的几何或标注结果
+- 可调项：无明显命令行选项。
+- 选项记忆：本次源码未见持久化选项。
+
+## 操作步骤
+
+1. 按提示准备输入：按提示拾取点位。
+2. 确认执行后，系统会添加新的几何或标注结果。
+
+## 注意事项
+

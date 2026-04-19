@@ -2,15 +2,15 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   {
-    text: "首页",
+    text: "Home",
     link: "/",
   },
   {
-    text: "命令",
-    link: "/cmds/",
+    text: "Guide",
+    link: "/guide/",
   },
   {
-    text: "发布",
+    text: "Releases",
     link: "https://github.com/Brywmzl/MedBox/releases",
   },
 ]);

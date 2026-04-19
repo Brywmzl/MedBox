@@ -6,7 +6,7 @@ const sortedCommandIndex = [...commandIndex].sort((left, right) =>
 );
 
 export default sidebar({
-  "/cmds/": [
+  "/guide/": [
     {
       text: "命令",
       prefix: "",

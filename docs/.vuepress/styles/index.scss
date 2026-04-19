@@ -383,23 +383,96 @@ body,
 
 .command-sidebar-panel {
   position: fixed;
-  top: calc(var(--navbar-height) + 16px);
-  left: 0;
+  top: var(--navbar-height);
+  left: 0 !important;
+  right: auto !important;
   z-index: 21;
   display: flex;
   flex-direction: column;
   gap: 12px;
   width: var(--command-sidebar-width);
-  height: calc(100vh - var(--navbar-height) - 24px);
-  padding: 0 18px 14px 14px;
+  height: calc(100vh - var(--navbar-height));
+  padding: 16px 18px 14px 14px;
   background: var(--bg-color);
   border-right: 1px solid rgba(104, 0, 75, 0.08);
   overflow: hidden;
   contain: layout paint;
+  transition: transform 0.24s ease, opacity 0.24s ease, box-shadow 0.24s ease, visibility 0.24s ease;
 }
 
 .command-sidebar-panel.is-hidden {
   display: none;
+}
+
+.command-sidebar-panel.is-collapsed {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateX(calc(-100% - 28px));
+}
+
+.command-sidebar-floating-toggle {
+  position: fixed;
+  top: calc(var(--navbar-height) + 80px);
+  left: 0 !important;
+  right: auto !important;
+  z-index: 22;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 16px 0 12px;
+  border: 1px solid rgba(104, 0, 75, 0.12);
+  border-left: none;
+  border-radius: 0 999px 999px 0;
+  background: rgba(255, 255, 255, 0.96);
+  color: #5d2d48;
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 12px 30px rgba(52, 31, 42, 0.12);
+  cursor: pointer;
+  backdrop-filter: blur(12px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+
+.command-sidebar-floating-toggle.is-hidden {
+  display: none;
+}
+
+.command-sidebar-floating-toggle:hover {
+  transform: translateX(2px);
+  box-shadow: 0 16px 34px rgba(52, 31, 42, 0.16);
+}
+
+.command-sidebar-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  min-height: 42px;
+}
+
+.command-sidebar-toggle-button {
+  flex-shrink: 0;
+  min-height: 34px;
+  padding: 0 14px;
+  border: 1px solid rgba(104, 0, 75, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.94);
+  color: #5d2d48;
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.command-sidebar-toggle-button:hover {
+  transform: translateY(-1px);
+  border-color: rgba(104, 0, 75, 0.18);
+  background: #fff;
+  color: #68004b;
 }
 
 .command-sidebar-controls {
@@ -524,13 +597,12 @@ body,
   box-sizing: border-box;
   width: 100%;
   min-width: 0;
-  min-height: 38px;
-  padding: 8px 10px;
+  min-height: 52px;
+  padding: 10px 12px;
   border: 1px solid rgba(104, 0, 75, 0.08);
   border-radius: 12px;
   background: rgba(255, 247, 251, 0.76);
   color: #5d2d48;
-  font-weight: 600;
   text-align: left;
   text-decoration: none;
   cursor: pointer;
@@ -552,19 +624,71 @@ body,
 }
 
 .command-sidebar-item-icon {
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
   flex-shrink: 0;
 }
 
-.command-sidebar-item-text {
+.command-sidebar-item-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   min-width: 0;
   flex: 1 1 auto;
-  font-size: 0.92rem;
+}
+
+.command-sidebar-item-label {
+  font-size: 0.95rem;
+  font-weight: 600;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.command-sidebar-item-title {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-top: 1px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.command-sidebar-item-copy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  color: #5d2d48;
+  opacity: 0;
+  cursor: pointer;
+  transition: opacity 0.2s ease, background-color 0.2s ease;
+}
+
+[data-theme="dark"] .command-sidebar-item-copy {
+  color: rgba(244, 217, 234, 0.86);
+}
+
+.command-sidebar-item:hover .command-sidebar-item-copy {
+  opacity: 0.6;
+}
+
+.command-sidebar-item-copy:hover {
+  opacity: 1 !important;
+  background-color: rgba(104, 0, 75, 0.1);
+}
+
+[data-theme="dark"] .command-sidebar-item-copy:hover {
+  background-color: rgba(241, 198, 223, 0.15);
+}
+
+.command-sidebar-copy-icon {
+  width: 14px;
+  height: 14px;
 }
 
 .command-sidebar-empty {
@@ -606,13 +730,15 @@ html.has-command-sidebar .toggle-sidebar-wrapper {
   display: none !important;
 }
 
-html.has-command-sidebar .vp-page-title,
-html.has-command-sidebar .theme-hope-content,
-html.has-command-sidebar .vp-page-nav,
-html.has-command-sidebar .vp-page-meta,
-html.has-command-sidebar .vp-breadcrumb {
-  margin-left: calc(var(--command-sidebar-width) + 16px) !important;
+html.has-command-sidebar:not(.is-command-sidebar-collapsed) .vp-page-title,
+html.has-command-sidebar:not(.is-command-sidebar-collapsed) .theme-hope-content,
+html.has-command-sidebar:not(.is-command-sidebar-collapsed) .vp-page-nav,
+html.has-command-sidebar:not(.is-command-sidebar-collapsed) .vp-page-meta,
+html.has-command-sidebar:not(.is-command-sidebar-collapsed) .vp-breadcrumb {
+  margin-left: max(calc(50vw - 430px), var(--command-sidebar-width) + 20px) !important;
   margin-right: auto !important;
+  width: 860px !important;
+  max-width: calc(100vw - 32px) !important;
 }
 
 html.is-resizing-command-sidebar,
@@ -663,6 +789,28 @@ html.is-resizing-command-sidebar body {
     box-shadow: 0 14px 30px rgba(104, 0, 75, 0.08);
   }
 
+  .command-sidebar-panel.is-collapsed {
+    transform: translateY(calc(-100% - 18px));
+  }
+
+  .command-sidebar-floating-toggle {
+    top: calc(var(--navbar-height) + 12px);
+    left: 12px;
+    min-height: 38px;
+    padding: 0 14px;
+    border-left: 1px solid rgba(104, 0, 75, 0.12);
+    border-radius: 999px;
+  }
+
+  .command-sidebar-toolbar {
+    min-height: 38px;
+  }
+
+  .command-sidebar-toggle-button {
+    min-height: 32px;
+    padding: 0 12px;
+  }
+
   .command-sidebar-resize-handle {
     display: none;
   }
@@ -691,15 +839,15 @@ html.is-resizing-command-sidebar body {
     max-height: min(42vh, 320px);
   }
 
-  html.has-command-sidebar .theme-container .vp-page {
+  html.has-command-sidebar:not(.is-command-sidebar-collapsed) .theme-container .vp-page {
     padding-top: var(--command-sidebar-mobile-offset, 0px) !important;
   }
 
-  html.has-command-sidebar .theme-hope-content,
-  html.has-command-sidebar .vp-page-title,
-  html.has-command-sidebar .vp-page-nav,
-  html.has-command-sidebar .vp-page-meta,
-  html.has-command-sidebar .vp-breadcrumb {
+  html.has-command-sidebar:not(.is-command-sidebar-collapsed) .theme-hope-content,
+  html.has-command-sidebar:not(.is-command-sidebar-collapsed) .vp-page-title,
+  html.has-command-sidebar:not(.is-command-sidebar-collapsed) .vp-page-nav,
+  html.has-command-sidebar:not(.is-command-sidebar-collapsed) .vp-page-meta,
+  html.has-command-sidebar:not(.is-command-sidebar-collapsed) .vp-breadcrumb {
     margin-left: 0 !important;
     margin-right: 0 !important;
   }
@@ -788,6 +936,21 @@ html.is-resizing-command-sidebar body {
   border-right-color: rgba(241, 198, 223, 0.08);
 }
 
+[data-theme="dark"] .command-sidebar-floating-toggle,
+[data-theme="dark"] .command-sidebar-toggle-button {
+  border-color: rgba(241, 198, 223, 0.12);
+  background: rgba(27, 6, 21, 0.92);
+  color: rgba(244, 217, 234, 0.9);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.28);
+}
+
+[data-theme="dark"] .command-sidebar-floating-toggle:hover,
+[data-theme="dark"] .command-sidebar-toggle-button:hover {
+  border-color: rgba(241, 198, 223, 0.18);
+  background: rgba(38, 11, 28, 0.96);
+  color: #fff7fb;
+}
+
 @media (max-width: 719px) {
   [data-theme="dark"] .command-sidebar-panel {
     box-shadow: 0 18px 34px rgba(0, 0, 0, 0.34);
@@ -847,7 +1010,7 @@ html.is-resizing-command-sidebar body {
 }
 
 [data-theme="dark"] .command-sidebar-resize-handle::before {
-  background: rgba(241, 198, 223, 0.18);
+  background: transparent;
 }
 
 [data-theme="dark"] .command-sidebar-resize-handle:hover::before,
@@ -972,6 +1135,152 @@ html.is-resizing-command-sidebar body {
     .vp-actions {
       justify-content: center;
       gap: 10px;
+    }
+  }
+}
+
+// 404 Not Found Page Action Buttons (Match Home styles)
+.vp-page.not-found .action-button {
+  border-radius: 999px;
+  padding: 0.85rem 1.5rem;
+  font-weight: 700;
+  box-shadow: none;
+  border: 1px solid rgba(104, 0, 75, 0.14);
+  background: rgba(255, 247, 251, 0.88);
+  color: #68004b;
+  margin: 0 8px;
+  transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(135deg, rgba(104, 0, 75, 0.95) 0%, rgba(143, 36, 95, 0.95) 100%);
+    color: #fff8fc;
+    border-color: rgba(104, 0, 75, 0.2);
+  }
+}
+
+[data-theme="dark"] .vp-page.not-found .action-button {
+  background: rgba(104, 0, 75, 0.18);
+  border-color: rgba(241, 198, 223, 0.12);
+  color: #f4d9ea;
+
+  &:hover {
+    background: linear-gradient(135deg, rgba(104, 0, 75, 0.95) 0%, rgba(143, 36, 95, 0.95) 100%);
+    color: #fff8fc;
+    border-color: rgba(241, 198, 223, 0.2);
+  }
+}
+
+// Disable auto-generated icons inside the page content/header
+.vp-page {
+  .vp-breadcrumb .vp-icon,
+  .vp-page-title .vp-icon,
+  > .vp-icon,
+  img.vp-icon {
+    display: none !important;
+  }
+}
+
+// 强制底部页脚与版权区域跟随主题文字颜色规范
+.vp-footer-wrapper,
+.vp-footer-wrapper .vp-footer,
+.vp-footer-wrapper .vp-copyright {
+  color: var(--c-text-light, #5d2d48) !important;
+}
+
+[data-theme="dark"] .vp-footer-wrapper,
+[data-theme="dark"] .vp-footer-wrapper .vp-footer,
+[data-theme="dark"] .vp-footer-wrapper .vp-copyright {
+  color: rgba(244, 217, 234, 0.6) !important;
+}
+
+// 强制修复右侧大纲（TOC）和文章所属作者栏的暗色模式可读性
+[data-theme="dark"] {
+  .vp-page-info .vp-author-info,
+  .vp-page-info .vp-category-info,
+  .vp-author-wrapper,
+  .vp-author-item,
+  .vp-page-meta,
+  .vp-toc-list .vp-toc-link,
+  .vp-toc-header {
+    color: rgba(244, 217, 234, 0.72) !important;
+  }
+
+  .vp-toc-list .vp-toc-link:hover,
+  .vp-toc-list .vp-toc-link.active {
+    color: #f1c6df !important;
+  }
+
+  --page-tag-bg: rgba(241, 198, 223, 0.12);
+  --page-tag-bg-hover: rgba(241, 198, 223, 0.18);
+  --page-tag-text: rgba(244, 217, 234, 0.86);
+}
+
+// 导航大纲（TOC）重叠问题已在上方通过向 .theme-hope-content 补充 max-width 原生修复
+
+// 全局隐藏正文区顶部的独立作者标识和底部的编辑分享按钮
+.vp-page {
+  .page-author-info,
+  .meta-item.edit-link {
+    display: none !important;
+  }
+}
+
+// 彻底隐藏 TOC 右上角的打印按钮
+.vp-toc-header button, 
+[class*="print-button"],
+[aria-label*="print" i] {
+  display: none !important;
+}
+
+// 强制修改 TOC 标题文本（CSS 兜底方案，确保始终显示 TOC）
+.vp-toc-header {
+  span, h2, .title, .vp-toc-title {
+    font-size: 0 !important; 
+    &::before, &::after {
+      content: "TOC" !important;
+      font-size: 1rem !important;
+      font-weight: 700 !important;
+      visibility: visible !important;
+    }
+  }
+}
+
+// 终极浮动镇压方案：防止当窗口缩小时，TOC 被框架作为伪浮动元素塞进正文
+html.has-command-sidebar {
+  .vp-page {
+    position: relative !important;
+  }
+  
+  // 核心：解除中间正文的骨架定位限制，让绝对定位能穿透到最外层
+  .theme-hope-content {
+    position: static !important;
+    overflow: visible !important;
+
+    // 全球级暴力定位：无论它在 HTML 的哪个角落，都强行把它拉出正文区并固定在右侧
+    #toc,
+    aside.vp-toc,
+    .vp-toc-wrapper,
+    div[class*="toc"],
+    nav[class*="toc"],
+    .theme-hope-content aside,
+    .theme-hope-content nav {
+      position: fixed !important;
+      top: 6rem !important;
+      right: 2rem !important;
+      left: auto !important;
+      width: 14rem !important;
+      padding: 1rem !important;
+      background: var(--bg-color-secondary) !important;
+      border: 1px solid var(--border-color) !important;
+      border-radius: 12px !important;
+      z-index: 1000 !important;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2) !important;
+      overflow-y: auto !important;
+      max-height: calc(100vh - 10rem) !important;
+      display: block !important;
+      visibility: visible !important;
+      opacity: 1 !important;
     }
   }
 }

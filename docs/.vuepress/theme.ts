@@ -28,12 +28,15 @@ export default hopeTheme({
   // sidebar
   sidebar,
 
-  footer: false,
+  footer: "",
+  copyright: "Copyright © 2022-2026 Brywmzl",
 
   displayFooter: true,
   lastUpdated: false,
   darkmode: "toggle",
   backToTop:false,
+  breadcrumbIcon: false,
+  titleIcon: false,
 
   encrypt: {
     config: {
@@ -42,9 +45,16 @@ export default hopeTheme({
   },
 
   // page meta
-  metaLocales: {
-    editLink: false,
+  locales: {
+    "/": {
+      metaLocales: {
+        editLink: "编辑此页",
+        toc: "TOC",
+      },
+    },
   },
+
+  headerDepth: 3,
 
   plugins: {
     readingTime: false, // 阅读时间
