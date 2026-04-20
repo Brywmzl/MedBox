@@ -34,6 +34,8 @@ export default hopeTheme({
   displayFooter: true,
   lastUpdated: false,
   contributors: false,
+  editLink: false,
+  pageInfo: ["Category", "Tag"],
   darkmode: "toggle",
   backToTop:false,
   breadcrumbIcon: false,
