@@ -1,19 +1,7 @@
 import { sidebar } from "vuepress-theme-hope";
-import commandIndex from "./command-index.json";
 
-const sortedCommandIndex = [...commandIndex].sort((left, right) =>
-  left.title.localeCompare(right.title, "zh-Hans-CN", { numeric: true, sensitivity: "base" })
-);
-
+// 自定义 CommandSidebar 组件已替代主题内置侧栏
+// 此处设为 false 以禁用主题默认侧栏
 export default sidebar({
-  "/guide/": [
-    {
-      text: "命令",
-      prefix: "",
-      children: sortedCommandIndex.map((item) => ({
-        text: item.title,
-        link: item.link,
-      })),
-    },
-  ],
+  "/guide/": false,
 });
