@@ -24,6 +24,11 @@ export default defineUserConfig({
       })();
       `,
     ],
+    [
+      "style",
+      {},
+      `.vp-page-title h1 > .icon { width: 48px !important; height: 48px !important; object-fit: contain; }`,
+    ],
   ],
 
   shouldPrefetch: false,
