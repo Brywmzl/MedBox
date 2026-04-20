@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #68004b;
+        opacity: .3;
+      }
+
+      .cls-2 {
+        stroke-width: 3px;
+      }
+
+      .cls-2, .cls-3, .cls-4 {
+        fill: none;
+        stroke: #68004b;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2, .cls-4 {
+        stroke-linecap: round;
+      }
+
+      .cls-3, .cls-4 {
+        stroke-width: 4px;
+      }
+
+      .cls-5 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <g>
+      <rect class="cls-1" x="30.5" y="34.67" width="50" height="41.67"/>
+      <line class="cls-2" x1="47.17" y1="34.67" x2="47.17" y2="76.33"/>
+      <rect class="cls-4" x="30.5" y="34.67" width="50" height="41.67"/>
+      <line class="cls-2" x1="30.5" y1="48" x2="80.5" y2="48"/>
+      <line class="cls-2" x1="30.5" y1="62.17" x2="80.5" y2="62.17"/>
+    </g>
+    <polyline class="cls-3" points="69.5 30.67 69.5 23.67 19.5 23.67 19.5 65.33 26.5 65.33"/>
+  </g>
+</svg>
