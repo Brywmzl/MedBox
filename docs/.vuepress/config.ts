@@ -15,19 +15,21 @@ export default defineUserConfig({
       {},
       `
       (function() {
-        const theme = localStorage.getItem('vuepress-theme-hope-scheme') || 'auto';
-        if (theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.setAttribute('data-theme', 'dark');
-        } else {
-          document.documentElement.setAttribute('data-theme', 'light');
-        }
+        var d = document.documentElement;
+        var theme = localStorage.getItem('vuepress-theme-hope-scheme') || 'auto';
+        var isDark = theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        d.setAttribute('data-theme', isDark ? 'dark' : 'light');
+        if (isDark) d.style.backgroundColor = '#12010d';
       })();
       `,
     ],
     [
       "style",
       {},
-      `.vp-page-title h1 > .icon { width: 48px !important; height: 48px !important; object-fit: contain; }`,
+      `
+      .vp-page-title h1 > .icon { width: 48px !important; height: 48px !important; object-fit: contain; }
+      html[data-theme="dark"] { background-color: #12010d !important; }
+      `,
     ],
   ],
 
