@@ -29,6 +29,7 @@ export default defineUserConfig({
       `
       .vp-page-title h1 > .icon { width: 48px !important; height: 48px !important; object-fit: contain; }
       html[data-theme="dark"] { background-color: #12010d !important; }
+      @media (max-width: 719px) { .vp-page-title h1 > .icon { width: 36px !important; height: 36px !important; } }
       `,
     ],
   ],

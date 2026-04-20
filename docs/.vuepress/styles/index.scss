@@ -1328,3 +1328,88 @@ html.has-command-sidebar .vp-page-title h1 > .icon {
     display: none !important;
   }
 }
+
+// ============================================================
+// 移动端优化 (≤ 719px)
+// ============================================================
+@media (max-width: 719px) {
+  // 标题卡片：缩小图标和间距
+  html.has-command-sidebar .vp-page-title h1 {
+    gap: 0.65rem !important;
+  }
+
+  html.has-command-sidebar .vp-page-title h1 > .icon {
+    width: 36px !important;
+    height: 36px !important;
+  }
+
+  .cmd-title-main {
+    font-size: 1.35rem !important;
+  }
+
+  .cmd-title-sub {
+    font-size: 0.78rem;
+  }
+
+  // 面包屑：紧凑化
+  .vp-breadcrumb {
+    font-size: 0.78rem;
+    padding: 0.3rem 0 !important;
+
+    .vp-breadcrumb-item {
+      max-width: 140px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+
+  // 内容区：减少内边距
+  .theme-hope-content {
+    padding: 0 0.8rem 1.5rem !important;
+  }
+
+  // 正文标题紧凑
+  .theme-hope-content h2 {
+    font-size: 1.25rem;
+    margin-top: 1.5rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .theme-hope-content h3 {
+    font-size: 1.1rem;
+    margin-top: 1.2rem;
+  }
+
+  // 正文段落行高优化
+  .theme-hope-content p,
+  .theme-hope-content li {
+    font-size: 0.92rem;
+    line-height: 1.7;
+  }
+
+  // 标签区紧凑
+  .page-tag-info {
+    font-size: 0.8rem;
+  }
+
+  .page-tag-item {
+    padding: 2px 8px !important;
+  }
+
+  // TOC 在移动端隐藏（不影响可用性）
+  .toc-place-holder {
+    display: none !important;
+  }
+
+  // 页脚紧凑
+  #main-footer {
+    padding: 0.8rem 1rem !important;
+    font-size: 0.78rem;
+  }
+
+  // 页面导航（上一篇/下一篇）
+  .vp-page-nav {
+    padding: 0.8rem 0 !important;
+  }
+}
