@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_AddDot.svg
 cmd: B_AddDot
 title: 注解点标注
+shortTitle: B_AddDot
 tag:
   - 标注
   - 物件
@@ -13,7 +14,7 @@ tag:
 
 按物件属性格式批量生成文字点，适合把属性值转成现场标记。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择一个或多个物件
 - 输出：生成文字点；需要时把结果自动编组

@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_UniformDirection.svg
 cmd: B_UniformDirection
 title: 统一方向
+shortTitle: B_UniformDirection
 tag:
   - 变换
   - 曲线
@@ -14,7 +15,7 @@ tag:
 
 依据参考线方向统一曲线方向或曲面法向。
 
-## 源码要点
+## 选项说明
 
 - 输入：按命令过滤选择物件；拾取一条方向线或参考线
 - 输出：直接替换原始物件

@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_LayerNameReplace.svg
 cmd: B_LayerNameReplace
 title: 图层名称替换
+shortTitle: B_LayerNameReplace
 tag:
   - 图层
 ---
@@ -12,7 +13,7 @@ tag:
 
 批量替换当前选中图层名称中的指定字符串。
 
-## 源码要点
+## 选项说明
 
 - 输入：输入关键字、替换文本或其他字符串参数
 - 输出：按命令逻辑处理当前输入

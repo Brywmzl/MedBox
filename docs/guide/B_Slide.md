@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_Slide.svg
 cmd: B_Slide
 title: 滑动
+shortTitle: B_Slide
 tag:
   - 变换
 ---
@@ -12,7 +13,7 @@ tag:
 
 调用 Rhino 平移控件让所选物件沿指定方向滑动。
 
-## 源码要点
+## 选项说明
 
 - 输入：通过平移控件定义滑动方向与距离
 - 输出：直接变换原始物件

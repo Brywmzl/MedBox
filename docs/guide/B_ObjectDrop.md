@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_ObjectDrop.svg
 cmd: B_ObjectDrop
 title: 物件投送
+shortTitle: B_ObjectDrop
 tag:
   - 物件
   - 工具
@@ -13,7 +14,7 @@ tag:
 
 将物件序列化到剪贴板，或从剪贴板还原物件与群组关系。
 
-## 源码要点
+## 选项说明
 
 - 输入：先选择命令模式；选择一个或多个物件
 - 输出：把物件数据写入剪贴板，或从剪贴板恢复物件与群组

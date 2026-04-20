@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_Planarization.svg
 cmd: B_Planarization
 title: 平面化
+shortTitle: B_Planarization
 tag:
   - 变换
   - 曲面
@@ -13,7 +14,7 @@ tag:
 
 将单面 Brep 平面化，可预览包围盒、信息点和边角固定结果。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择单面 Brep
 - 输出：生成新的 Brep；直接替换原始物件；在命令行输出结果；需要时把结果自动编组

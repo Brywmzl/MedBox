@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_FindTextFromInsertion.svg
 cmd: B_FindTextFromInsertion
 title: 从图块查找文本
+shortTitle: B_FindTextFromInsertion
 tag:
   - 文字
 ---
@@ -12,7 +13,7 @@ tag:
 
 在图块实例内部检索文本内容，并选中命中的图块。
 
-## 源码要点
+## 选项说明
 
 - 输入：输入关键字、替换文本或其他字符串参数
 - 输出：选中命中的图块实例，并在命令行输出数量

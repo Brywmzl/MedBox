@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_AddAngularDimensionByNode.svg
 cmd: B_AddAngularDimensionByNode
 title: 标注节点角度
+shortTitle: B_AddAngularDimensionByNode
 tag:
   - 标注
   - 曲线
@@ -13,7 +14,7 @@ tag:
 
 对曲线节点或折点自动生成角度标注，支持过滤直角与角度容差。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择曲线或边缘
 - 输出：生成角度标注；需要时把结果自动编组

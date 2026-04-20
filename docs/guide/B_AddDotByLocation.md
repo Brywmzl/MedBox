@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_AddDotByLocation.svg
 cmd: B_AddDotByLocation
 title: 坐标点标注
+shortTitle: B_AddDotByLocation
 tag:
   - 标注
   - 点
@@ -13,7 +14,7 @@ tag:
 
 根据点坐标生成文字点，可设置基准平面与输出格式。
 
-## 源码要点
+## 选项说明
 
 - 输入：设置或拾取基准平面；按提示拾取点位
 - 输出：添加新的几何或标注结果；在命令行输出结果；需要时把结果自动编组

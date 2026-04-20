@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_SelEdge-106.svg
 cmd: B_SelEdge
 title: 选取边缘
+shortTitle: B_SelEdge
 tag:
   - 选择
   - 曲面
@@ -13,7 +14,7 @@ tag:
 
 对 Brep 边缘使用多种规则进行选择，并继续执行边缘动作。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择 Brep 物件
 - 输出：生成边缘选择集，并进入后续边缘动作

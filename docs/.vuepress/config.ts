@@ -9,6 +9,23 @@ export default defineUserConfig({
 
   theme,
 
+  head: [
+    [
+      "script",
+      {},
+      `
+      (function() {
+        const theme = localStorage.getItem('vuepress-theme-hope-scheme') || 'auto';
+        if (theme === 'dark' || (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        } else {
+          document.documentElement.setAttribute('data-theme', 'light');
+        }
+      })();
+      `,
+    ],
+  ],
+
   shouldPrefetch: false,
   
 });

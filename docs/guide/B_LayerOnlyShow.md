@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_LayerOnlyShow.svg
 cmd: B_LayerOnlyShow
 title: 图层独显
+shortTitle: B_LayerOnlyShow
 tag:
   - 图层
 ---
@@ -12,7 +13,7 @@ tag:
 
 仅显示当前选中图层及其父层，其余图层自动隐藏。
 
-## 源码要点
+## 选项说明
 
 - 输入：按界面提示完成输入。
 - 输出：修改图层可见性并刷新视图

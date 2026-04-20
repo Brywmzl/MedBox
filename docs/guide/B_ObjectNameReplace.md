@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_ObjectNameReplace.svg
 cmd: B_ObjectNameReplace
 title: 物件名称替换
+shortTitle: B_ObjectNameReplace
 tag:
   - 物件
 ---
@@ -12,7 +13,7 @@ tag:
 
 批量替换所选物件名称中的指定字符串。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择一个或多个物件；输入关键字、替换文本或其他字符串参数
 - 输出：按命令逻辑处理当前输入

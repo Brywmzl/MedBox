@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_SelBlock.svg
 cmd: B_SelBlock
 title: 选取图块
+shortTitle: B_SelBlock
 tag:
   - 选择
 ---
@@ -12,7 +13,7 @@ tag:
 
 选取图块实例，可按同定义图块一起选中。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择图块实例
 - 输出：选中符合条件的物件

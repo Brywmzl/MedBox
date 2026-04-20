@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_ObjectAttributes.svg
 cmd: B_ObjectAttributes
 title: 物件属性
+shortTitle: B_ObjectAttributes
 tag:
   - 物件
 ---
@@ -12,7 +13,7 @@ tag:
 
 打开物件属性创建对话框，配置或生成属性模板。
 
-## 源码要点
+## 选项说明
 
 - 输入：在属性创建对话框中填写参数
 - 输出：在对话框确认后执行对应处理

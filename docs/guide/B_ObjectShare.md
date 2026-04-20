@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_ObjectShare.svg
 cmd: B_ObjectShare
 title: 物件分享
+shortTitle: B_ObjectShare
 tag:
   - 物件
   - 工具
@@ -13,7 +14,7 @@ tag:
 
 通过分享码把物件导出到共享目录，或按分享码导入。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择一个或多个物件；输入关键字、替换文本或其他字符串参数
 - 输出：导出分享文件并生成分享码，或按分享码导入共享物件

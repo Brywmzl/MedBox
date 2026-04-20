@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_Rotate.svg
 cmd: B_Rotate
 title: 旋转
+shortTitle: B_Rotate
 tag:
   - 变换
 ---
@@ -12,7 +13,7 @@ tag:
 
 调用 MedBox 自定义旋转流程处理物件。
 
-## 源码要点
+## 选项说明
 
 - 输入：按界面提示完成输入。
 - 输出：执行 MedBox 自定义旋转流程

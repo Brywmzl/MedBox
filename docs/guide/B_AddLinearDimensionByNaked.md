@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_AddLinearDimensionByNaked.svg
 cmd: B_AddLinearDimensionByNaked
 title: 标注裸露边缘
+shortTitle: B_AddLinearDimensionByNaked
 tag:
   - 标注
   - 曲面
@@ -13,7 +14,7 @@ tag:
 
 对 Brep 裸边批量生成尺寸标注。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择 Brep 几何
 - 输出：添加新的几何或标注结果

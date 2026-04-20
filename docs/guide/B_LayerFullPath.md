@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_LayerFullPath.svg
 cmd: B_LayerFullPath
 title: 图层完整路径
+shortTitle: B_LayerFullPath
 tag:
   - 图层
   - 工具
@@ -13,7 +14,7 @@ tag:
 
 复制当前选中图层的完整路径到剪贴板。
 
-## 源码要点
+## 选项说明
 
 - 输入：先在图层面板选中目标图层
 - 输出：把完整图层路径写入剪贴板

@@ -2,6 +2,7 @@ import { defineClientConfig, usePageData } from "@vuepress/client";
 import { defineComponent, h } from "vue";
 import hopeThemeClientConfig from "./.temp/theme-hope/config.js";
 import CommandSidebar from "./theme/components/CommandSidebar";
+import PageTitleEnhancer from "./theme/components/PageTitleEnhancer";
 
 const HopeLayout = hopeThemeClientConfig.layouts?.Layout;
 
@@ -76,6 +77,7 @@ export default defineClientConfig({
   },
   rootComponents: [
     () => h(RouteAwareCommandSidebar),
+    () => h(PageTitleEnhancer),
   ],
   layouts: {
     Layout: RouteAwareLayout,

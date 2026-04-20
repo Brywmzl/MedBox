@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_CurveSnap.svg
 cmd: B_CurveSnap
 title: 曲线吸附
+shortTitle: B_CurveSnap
 tag:
   - 变换
   - 曲线
@@ -13,7 +14,7 @@ tag:
 
 将源曲线端点吸附到目标曲线附近的最近位置。
 
-## 源码要点
+## 选项说明
 
 - 输入：按界面提示完成输入。
 - 输出：直接替换原始物件

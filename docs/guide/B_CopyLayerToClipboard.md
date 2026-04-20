@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_CopyLayerToClipboard.svg
 cmd: B_CopyLayerToClipboard
 title: 复制图层
+shortTitle: B_CopyLayerToClipboard
 tag:
   - 图层
   - 工具
@@ -13,7 +14,7 @@ tag:
 
 把选中图层的层级与颜色信息复制到剪贴板，供别处粘贴导入。
 
-## 源码要点
+## 选项说明
 
 - 输入：先在图层面板选中目标图层
 - 输出：把图层结构写入剪贴板

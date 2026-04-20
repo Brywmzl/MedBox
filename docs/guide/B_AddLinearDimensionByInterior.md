@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_AddLinearDimensionByInterior.svg
 cmd: B_AddLinearDimensionByInterior
 title: 标注内角边缘
+shortTitle: B_AddLinearDimensionByInterior
 tag:
   - 标注
   - 曲面
@@ -13,7 +14,7 @@ tag:
 
 对 Brep 内角边缘批量生成尺寸标注。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择 Brep 物件
 - 输出：添加新的几何或标注结果

@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_AddLinearDimensionByDiagonal.svg
 cmd: B_AddLinearDimensionByDiagonal
 title: 标注对角线
+shortTitle: B_AddLinearDimensionByDiagonal
 tag:
   - 标注
   - 曲面
@@ -13,7 +14,7 @@ tag:
 
 对曲面或面域的对角方向生成线性尺寸标注。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择曲面或多重曲面
 - 输出：添加新的几何或标注结果

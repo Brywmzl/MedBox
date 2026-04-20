@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_ToPolyline.svg
 cmd: B_ToPolyline
 title: 曲线拉直
+shortTitle: B_ToPolyline
 tag:
   - 曲线
   - 变换
@@ -13,7 +14,7 @@ tag:
 
 按容差把曲线转换或拉直为多段线。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择曲线物件
 - 输出：直接替换原始物件

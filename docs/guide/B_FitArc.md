@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_FitArc.svg
 cmd: B_FitArc
 title: 曲线拟弧
+shortTitle: B_FitArc
 tag:
   - 曲线
 ---
@@ -12,7 +13,7 @@ tag:
 
 对曲线尝试拟合圆弧，并可附带误差或半径文字点。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择曲线物件
 - 输出：生成文字点；生成圆弧；在命令行输出结果；需要时把结果自动编组

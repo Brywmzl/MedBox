@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_Area.svg
 cmd: B_Area
 title: 面积
+shortTitle: B_Area
 tag:
   - 分析
   - 统计
@@ -13,7 +14,7 @@ tag:
 
 统计所选闭合曲线、曲面、网格、SubD 或填充的面积。
 
-## 源码要点
+## 选项说明
 
 - 输入：按界面提示完成输入。
 - 输出：在命令行输出结果

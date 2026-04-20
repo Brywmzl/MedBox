@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_ObjectTable.svg
 cmd: B_ObjectTable
 title: 物件表格
+shortTitle: B_ObjectTable
 tag:
   - 物件
 ---
@@ -12,7 +13,7 @@ tag:
 
 打开表格查看器，集中浏览所选物件的数据。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择一个或多个物件；在表格查看器中填写参数
 - 输出：打开表格查看器展示所选物件数据

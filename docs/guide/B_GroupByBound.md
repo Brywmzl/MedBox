@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_GroupByBound.svg
 cmd: B_GroupByBound
 title: 群组（区域）
+shortTitle: B_GroupByBound
 tag:
   - 分组
 ---
@@ -12,7 +13,7 @@ tag:
 
 按边界区域把物件重新分组；当前页面对应实现源码为 B_GroupByRegion.py。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择一个或多个物件
 - 输出：需要时把结果自动编组

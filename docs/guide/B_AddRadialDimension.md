@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_AddRadialDimension.svg
 cmd: B_AddRadialDimension
 title: 标注径向尺寸
+shortTitle: B_AddRadialDimension
 tag:
   - 标注
   - 曲线
@@ -13,7 +14,7 @@ tag:
 
 对圆、圆弧或圆形边缘生成径向或直径标注。
 
-## 源码要点
+## 选项说明
 
 - 输入：按命令过滤选择物件
 - 输出：生成径向或直径标注；需要时把结果自动编组

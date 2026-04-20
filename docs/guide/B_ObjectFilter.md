@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_ObjectFilter.svg
 cmd: B_ObjectFilter
 title: 物件过滤
+shortTitle: B_ObjectFilter
 tag:
   - 物件
 ---
@@ -12,7 +13,7 @@ tag:
 
 打开物件过滤对话框，按条件筛选目标物件。
 
-## 源码要点
+## 选项说明
 
 - 输入：在物件过滤对话框中填写参数
 - 输出：在对话框确认后执行对应处理

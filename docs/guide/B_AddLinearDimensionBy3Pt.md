@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_AddLinearDimensionBy3Pt.svg
 cmd: B_AddLinearDimensionBy3Pt
 title: 三点线性标注
+shortTitle: B_AddLinearDimensionBy3Pt
 tag:
   - 标注
 ---
@@ -12,7 +13,7 @@ tag:
 
 通过三个点直接创建线性尺寸标注。
 
-## 源码要点
+## 选项说明
 
 - 输入：按提示拾取点位
 - 输出：添加新的几何或标注结果

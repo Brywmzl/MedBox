@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_AddLinearDimensionByArc.svg
 cmd: B_AddLinearDimensionByArc
 title: 标注弧长
+shortTitle: B_AddLinearDimensionByArc
 tag:
   - 标注
   - 曲线
@@ -13,7 +14,7 @@ tag:
 
 对弧线生成弧长或半径相关的尺寸标注。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择曲线或边缘
 - 输出：生成角度标注；需要时把结果自动编组

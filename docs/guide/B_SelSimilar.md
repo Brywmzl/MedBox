@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_SelSimilar.svg
 cmd: B_SelSimilar
 title: 选取相似
+shortTitle: B_SelSimilar
 tag:
   - 选择
   - 物件
@@ -13,7 +14,7 @@ tag:
 
 以参考物件为基准筛选相似物件并直接选中。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择一个参考物件
 - 输出：选中相似物件，并在命令行输出数量

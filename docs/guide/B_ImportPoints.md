@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_ImportPoints.svg
 cmd: B_ImportPoints
 title: 导入点
+shortTitle: B_ImportPoints
 tag:
   - 点
   - 工具
@@ -13,7 +14,7 @@ tag:
 
 打开点位导入对话框，解析文本或表格数据后生成点。
 
-## 源码要点
+## 选项说明
 
 - 输入：在导入点对话框中填写参数
 - 输出：在对话框确认后执行对应处理

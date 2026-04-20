@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_AddAxisNumber.svg
 cmd: B_AddAxisNumber
 title: 创建轴号
+shortTitle: B_AddAxisNumber
 tag:
   - 标注
 ---
@@ -12,7 +13,7 @@ tag:
 
 根据 Sequence 点物件和轴向参考，批量生成轴号、辅助圆线及尺寸标注。
 
-## 源码要点
+## 选项说明
 
 - 输入：按命令过滤选择物件；设置二维轴向参考；拾取一条方向线或参考线
 - 输出：生成直线；生成圆；生成文字；生成线性标注；需要时把结果自动编组

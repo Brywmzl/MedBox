@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_Project.svg
 cmd: B_Project
 title: 拍平
+shortTitle: B_Project
 tag:
   - 变换
 ---
@@ -12,7 +13,7 @@ tag:
 
 提供原位投影、移动到地面、投影到地面三种拍平方式。
 
-## 源码要点
+## 选项说明
 
 - 输入：设置或拾取基准平面；选择一个或多个物件；按提示拾取点位
 - 输出：直接变换原始物件；需要时把结果自动编组

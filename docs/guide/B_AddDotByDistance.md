@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_AddDotByDistance.svg
 cmd: B_AddDotByDistance
 title: 距离点标注
+shortTitle: B_AddDotByDistance
 tag:
   - 标注
   - 点
@@ -13,7 +14,7 @@ tag:
 
 通过两点距离创建带数值的距离线和文字点。
 
-## 源码要点
+## 选项说明
 
 - 输入：按提示拾取点位
 - 输出：添加新的几何或标注结果

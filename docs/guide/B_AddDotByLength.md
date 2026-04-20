@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_AddDotByLength.svg
 cmd: B_AddDotByLength
 title: 长度点标注
+shortTitle: B_AddDotByLength
 tag:
   - 标注
   - 曲线
@@ -13,7 +14,7 @@ tag:
 
 对曲线或边缘的分段长度批量生成文字点标注。
 
-## 源码要点
+## 选项说明
 
 - 输入：按命令过滤选择物件
 - 输出：生成文字点；需要时把结果自动编组

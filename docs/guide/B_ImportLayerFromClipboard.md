@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_ImportLayerFromClipboard.svg
 cmd: B_ImportLayerFromClipboard
 title: 导入图层
+shortTitle: B_ImportLayerFromClipboard
 tag:
   - 图层
   - 工具
@@ -13,7 +14,7 @@ tag:
 
 读取剪贴板中的图层结构，并在当前选中图层下创建对应子层。
 
-## 源码要点
+## 选项说明
 
 - 输入：先在图层面板选中目标图层
 - 输出：在选中图层下创建导入的图层结构

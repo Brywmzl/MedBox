@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_PlanarHeightTest.svg
 cmd: B_PlanarHeightTest
 title: 标注曲面弦高
+shortTitle: B_PlanarHeightTest
 tag:
   - 分析
   - 统计
@@ -14,7 +15,7 @@ tag:
 
 计算曲面偏离平面的最大弦高，并可上色或加文字点。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择曲面或多重曲面
 - 输出：生成文字点；需要时把结果自动编组

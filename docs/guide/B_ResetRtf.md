@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_ResetRtf.svg
 cmd: B_ResetRtf
 title: 重置富文本
+shortTitle: B_ResetRtf
 tag:
   - 文字
   - 工具
@@ -13,7 +14,7 @@ tag:
 
 清除注释物件的富文本内容，保留纯文本。
 
-## 源码要点
+## 选项说明
 
 - 输入：按界面提示完成输入。
 - 输出：直接清除注释物件的富文本内容

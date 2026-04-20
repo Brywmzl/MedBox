@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_SetMacro.svg
 cmd: B_SetMacro
 title: 设置快捷键
+shortTitle: B_SetMacro
 tag:
   - 工具
 ---
@@ -12,7 +13,7 @@ tag:
 
 批量设置或重置 MedBox 预设别名与快捷键。
 
-## 源码要点
+## 选项说明
 
 - 输入：先选择命令模式
 - 输出：写入或重置 Rhino 别名与快捷键

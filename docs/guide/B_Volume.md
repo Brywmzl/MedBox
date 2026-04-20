@@ -2,6 +2,7 @@
 icon: /media/svgs/med_Analysis.svg
 cmd: B_Volume
 title: 体积
+shortTitle: B_Volume
 tag:
   - 分析
   - 统计
@@ -13,7 +14,7 @@ tag:
 
 统计实体体积、体积误差，并估算钢重。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择实体几何
 - 输出：在命令行输出结果

@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_CornerPin.svg
 cmd: B_CornerPin
 title: 边角固定
+shortTitle: B_CornerPin
 tag:
   - 变换
   - 曲面
@@ -13,7 +14,7 @@ tag:
 
 以边角固定方式重建或调整曲面/多重曲面，并输出新的 Brep。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择 Brep 物件
 - 输出：生成新的 Brep；直接替换原始物件

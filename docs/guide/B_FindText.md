@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_FindText.svg
 cmd: B_FindText
 title: 查找文本
+shortTitle: B_FindText
 tag:
   - 文字
 ---
@@ -12,7 +13,7 @@ tag:
 
 打开文本查找对话框，按文本条件检索注释与文字内容。
 
-## 源码要点
+## 选项说明
 
 - 输入：按界面提示完成输入。
 - 输出：打开文本查找对话框并按条件检索结果

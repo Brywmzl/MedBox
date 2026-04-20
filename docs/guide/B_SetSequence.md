@@ -2,6 +2,7 @@
 icon: /media/svgs/med_Object.svg
 cmd: B_SetSequence
 title: 设置物件顺序
+shortTitle: B_SetSequence
 tag:
   - 物件
 ---
@@ -12,7 +13,7 @@ tag:
 
 沿参考曲线为物件写入顺序，并可附加编号文字点。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择一条参考曲线；选择一个或多个物件；拾取一条方向线或参考线
 - 输出：生成文字点；添加新的几何或标注结果；需要时把结果自动编组

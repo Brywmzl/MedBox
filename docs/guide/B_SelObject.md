@@ -2,6 +2,7 @@
 icon: /media/svgs/med_Object.svg
 cmd: B_SelObject
 title: 选取物件
+shortTitle: B_SelObject
 tag:
   - 选择
   - 物件
@@ -13,7 +14,7 @@ tag:
 
 按同图层或选中图层批量选取物件，可包含子图层。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择一个或多个物件；先在图层面板选中目标图层
 - 输出：选中符合条件的物件

@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_SelLength.svg
 cmd: B_SelLength
 title: 以长度选取曲线
+shortTitle: B_SelLength
 tag:
   - 选择
   - 曲线
@@ -13,7 +14,7 @@ tag:
 
 按目标长度或长度范围筛选曲线。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择曲线物件
 - 输出：选中符合条件的物件

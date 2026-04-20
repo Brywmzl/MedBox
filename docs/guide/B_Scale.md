@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_Scale.svg
 cmd: B_Scale
 title: 缩放
+shortTitle: B_Scale
 tag:
   - 变换
 ---
@@ -12,7 +13,7 @@ tag:
 
 以包围盒中心或指定原点为基准缩放物件。
 
-## 源码要点
+## 选项说明
 
 - 输入：先选择命令模式；选择一个或多个物件；按提示拾取点位
 - 输出：直接变换原始物件

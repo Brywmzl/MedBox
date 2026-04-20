@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_Length.svg
 cmd: B_Length
 title: 长度
+shortTitle: B_Length
 tag:
   - 分析
   - 统计
@@ -14,7 +15,7 @@ tag:
 
 统计所选曲线或边缘的总长度，并同时输出当前单位与米制结果。
 
-## 源码要点
+## 选项说明
 
 - 输入：选择符合过滤条件的几何
 - 输出：在命令行输出结果

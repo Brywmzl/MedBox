@@ -732,6 +732,7 @@ html.has-command-sidebar .toggle-sidebar-wrapper {
 
 html.has-command-sidebar:not(.is-command-sidebar-collapsed) .vp-page-title,
 html.has-command-sidebar:not(.is-command-sidebar-collapsed) .theme-hope-content,
+html.has-command-sidebar:not(.is-command-sidebar-collapsed) .toc-place-holder,
 html.has-command-sidebar:not(.is-command-sidebar-collapsed) .vp-page-nav,
 html.has-command-sidebar:not(.is-command-sidebar-collapsed) .vp-page-meta,
 html.has-command-sidebar:not(.is-command-sidebar-collapsed) .vp-breadcrumb {
@@ -1172,9 +1173,9 @@ html.is-resizing-command-sidebar body {
 }
 
 // Disable auto-generated icons inside the page content/header
+// 注意：命令页 .vp-page-title 内的 .icon 被保留用于标题卡片布局
 .vp-page {
   .vp-breadcrumb .vp-icon,
-  .vp-page-title .vp-icon,
   > .vp-icon,
   img.vp-icon {
     display: none !important;
@@ -1246,49 +1247,66 @@ html.is-resizing-command-sidebar body {
   }
 }
 
-// 终极浮动镇压方案：防止当窗口缩小时，TOC 被框架作为伪浮动元素塞进正文
-html.has-command-sidebar {
-  .vp-page {
-    position: relative !important;
-    // 关键：确保主容器也不产生干扰
-    transform: none !important;
-    contain: none !important;
-  }
-  
-  // 核心：解除中间正文的骨架定位限制，让绝对定位能穿透到最外层
-  .theme-hope-content {
-    position: static !important;
-    overflow: visible !important;
-    // 关键：解除父级对 position: fixed 的封印 (层叠上下文)
-    transform: none !important;
-    filter: none !important;
-    perspective: none !important;
-    contain: none !important;
+// TOC 贴住文章右侧：.toc-place-holder 与 .theme-hope-content 是同级兄弟元素
+// #toc 使用 position: absolute; left: calc(100% + 1rem) 相对于 .toc-place-holder
+// 只需让 .toc-place-holder 拥有与文章相同的 margin-left 和 width，TOC 就能自动贴住文章右侧
 
-    // 全球级暴力定位：无论它在 HTML 的哪个角落，都强行把它拉出正文区并固定在右侧
-    #toc,
-    aside.vp-toc,
-    .vp-toc-wrapper,
-    div[class*="toc"],
-    nav[class*="toc"],
-    .theme-hope-content aside,
-    .theme-hope-content nav {
-      position: fixed !important;
-      top: 6rem !important;
-      right: 2rem !important;
-      left: auto !important;
-      width: 14rem !important;
-      padding: 1rem !important;
-      background: var(--bg-color-secondary) !important;
-      border: 1px solid var(--border-color) !important;
-      border-radius: 12px !important;
-      z-index: 1000 !important;
-      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2) !important;
-      overflow-y: auto !important;
-      max-height: calc(100vh - 10rem) !important;
-      display: block !important;
-      visibility: visible !important;
-      opacity: 1 !important;
-    }
-  }
+// ============================================================
+// 命令页标题卡片布局：图标 + 中文名 + 命令名
+// 由 PageTitleEnhancer.ts 注入 DOM 结构：
+//   <h1>
+//     <img class="icon">
+//     <span class="cmd-title-group">
+//       <span class="cmd-title-main">选取图块</span>
+//       <span class="cmd-title-sub">B_SelBlock</span>
+//     </span>
+//   </h1>
+// ============================================================
+
+// h1 横向 flex
+html.has-command-sidebar .vp-page-title h1 {
+  display: flex !important;
+  align-items: center !important;
+  gap: 1rem !important;
+}
+
+// 图标：无背景，纯图标
+html.has-command-sidebar .vp-page-title h1 > .icon {
+  display: block !important;
+  flex-shrink: 0;
+  width: 48px !important;
+  height: 48px !important;
+  object-fit: contain;
+}
+
+// 标题分组：纵向排列中文名 + 命令名
+.cmd-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  min-width: 0;
+}
+
+.cmd-title-main {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: 1.3;
+  color: #68004b;
+}
+
+[data-theme="dark"] .cmd-title-main {
+  color: #f1c6df;
+}
+
+.cmd-title-sub {
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: rgba(93, 45, 72, 0.55);
+  letter-spacing: 0.01em;
+  font-family: "Consolas", "Monaco", "Menlo", monospace;
+  line-height: 1.3;
+}
+
+[data-theme="dark"] .cmd-title-sub {
+  color: rgba(244, 217, 234, 0.48);
 }

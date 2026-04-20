@@ -33,10 +33,11 @@ export default hopeTheme({
 
   displayFooter: true,
   lastUpdated: false,
+  contributors: false,
   darkmode: "toggle",
   backToTop:false,
   breadcrumbIcon: false,
-  titleIcon: false,
+  titleIcon: true,
 
   encrypt: {
     config: {

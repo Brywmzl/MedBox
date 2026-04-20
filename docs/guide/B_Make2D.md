@@ -2,6 +2,7 @@
 icon: /media/svgs/med_B_Make2D.svg
 cmd: B_Make2D
 title: 切剖面
+shortTitle: B_Make2D
 tag:
   - 曲线
 ---
@@ -12,7 +13,7 @@ tag:
 
 按方向线或当前视图生成 2D 隐线或切剖线结果。
 
-## 源码要点
+## 选项说明
 
 - 输入：先选择命令模式；选择一个或多个物件；拾取一条方向线或参考线
 - 输出：按命令逻辑处理当前输入
