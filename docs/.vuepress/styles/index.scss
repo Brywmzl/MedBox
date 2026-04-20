@@ -1320,3 +1320,11 @@ html.has-command-sidebar .vp-page-title h1 > .icon {
     opacity: 0.75;
   }
 }
+
+// 隐藏标签悬停气泡提示
+.page-tag-info[data-balloon-pos] {
+  &::before,
+  &::after {
+    display: none !important;
+  }
+}
