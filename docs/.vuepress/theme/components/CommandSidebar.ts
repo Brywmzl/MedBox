@@ -105,6 +105,7 @@ const matchFilter = (item: NormalizedCommandItem, filterKey: string): boolean =>
 
 const sharedKeyword = ref("");
 const sharedActiveFilter = ref("all");
+export { sharedActiveFilter };
 const sharedSidebarWidth = ref<number | null>(null);
 const sharedSidebarCollapsed = ref(false);
 let hasRestoredSidebarState = false;

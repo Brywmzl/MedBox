@@ -1310,3 +1310,13 @@ html.has-command-sidebar .vp-page-title h1 > .icon {
 [data-theme="dark"] .cmd-title-sub {
   color: rgba(244, 217, 234, 0.48);
 }
+
+// 文章标签点击联动侧栏筛选
+.page-tag-item {
+  cursor: pointer !important;
+  transition: opacity 0.15s ease;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

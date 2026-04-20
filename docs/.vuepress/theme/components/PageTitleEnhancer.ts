@@ -1,10 +1,14 @@
-import { defineComponent, watch, onBeforeUnmount, nextTick } from "vue";
+import { defineComponent, watch, onBeforeUnmount, onMounted, nextTick } from "vue";
 import { usePageData, usePageFrontmatter } from "@vuepress/client";
+import { sharedActiveFilter } from "./CommandSidebar";
 
 /**
  * Root component that enhances the page title on command pages.
  * Injects the command name as a subtitle inside `.vp-page-title h1`,
  * wrapping both the title text and subtitle in a structured container.
+ *
+ * Also intercepts clicks on `.page-tag-item` in the article content
+ * and syncs the sidebar tag filter accordingly.
  *
  * Result DOM:
  *   <h1>
@@ -21,6 +25,7 @@ export default defineComponent({
     const pageData = usePageData();
     const frontmatter = usePageFrontmatter<{ cmd?: string }>();
     let cleanup: (() => void) | null = null;
+    let tagClickCleanup: (() => void) | null = null;
 
     const enhance = (): void => {
       cleanup?.();
@@ -72,6 +77,29 @@ export default defineComponent({
       };
     };
 
+    // Delegated click handler for article tag items → sidebar filter sync
+    const handleTagClick = (event: MouseEvent): void => {
+      const target = event.target as HTMLElement;
+      const tagItem = target.closest?.(".page-tag-item");
+      if (!tagItem) return;
+
+      const tagText = (tagItem.textContent ?? "").trim();
+      if (!tagText) return;
+
+      // Prevent the theme's default tag navigation
+      event.preventDefault();
+      event.stopPropagation();
+
+      // Set the sidebar filter to match this tag
+      sharedActiveFilter.value = tagText;
+
+      // Scroll to sidebar top for visibility
+      const sidebar = document.getElementById("medbox-command-sidebar");
+      if (sidebar) {
+        sidebar.scrollTop = 0;
+      }
+    };
+
     watch(
       () => pageData.value.path,
       () => {
@@ -86,8 +114,18 @@ export default defineComponent({
       { immediate: true }
     );
 
+    onMounted(() => {
+      if (typeof document !== "undefined") {
+        document.addEventListener("click", handleTagClick, true);
+        tagClickCleanup = () => {
+          document.removeEventListener("click", handleTagClick, true);
+        };
+      }
+    });
+
     onBeforeUnmount(() => {
       cleanup?.();
+      tagClickCleanup?.();
     });
 
     return () => null;
