@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #68004b;
+      }
+
+      .cls-2 {
+        fill: none;
+        opacity: .6;
+      }
+
+      .cls-3 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <polygon class="cls-1" points="20 80 20 20 50 50 20 80"/>
+    <polygon class="cls-2" points="20 20 80 20 50 50 20 20"/>
+    <path class="cls-1" d="M77,23v54H23V23h54M80,20H20v60h60V20h0Z"/>
+    <polygon class="cls-1" points="80 20 80 80 50 50 80 20"/>
+    <polygon class="cls-2" points="80 80 20 80 50 50 80 80"/>
+  </g>
+</svg>

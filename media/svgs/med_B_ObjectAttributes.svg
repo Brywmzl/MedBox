@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #68004b;
+        stroke-linecap: square;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: #68004b;
+      }
+
+      .cls-4 {
+        fill: #fafafa;
+      }
+
+      .cls-5 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <path class="cls-2" d="M72,84c-11.05,0-20-8.95-20-20s8.95-20,20-20c4.97,0,9.5,1.82,13,4.82V15H15v70h70v-5.82c-3.5,3-8.03,4.82-13,4.82Z"/>
+    </clipPath>
+  </defs>
+  <rect class="cls-4" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <path class="cls-3" d="M80.43,78.5c-2.49,1.42-5.37,2.24-8.44,2.24-9.39,0-17-7.61-17-17,0-3.07.82-5.95,2.24-8.44.75-1.31,2.52-1.39,3.59-.33l19.94,19.94c1.06,1.06.99,2.84-.33,3.59Z"/>
+    <path class="cls-3" d="M86.76,72.18c-.75,1.31-2.52,1.39-3.59.33l-19.94-19.94c-1.06-1.06-.99-2.84.33-3.59,2.49-1.42,5.37-2.24,8.44-2.24,9.39,0,17,7.61,17,17,0,3.07-.82,5.95-2.24,8.44Z"/>
+  </g>
+  <g class="cls-5">
+    <g>
+      <line class="cls-1" x1="29.07" y1="38.12" x2="51.93" y2="38.12"/>
+      <rect class="cls-1" x="20.5" y="22.88" width="40" height="55.24"/>
+      <line class="cls-1" x1="29.07" y1="60.98" x2="51.93" y2="60.98"/>
+      <line class="cls-1" x1="29.07" y1="49.55" x2="51.93" y2="49.55"/>
+    </g>
+  </g>
+</svg>

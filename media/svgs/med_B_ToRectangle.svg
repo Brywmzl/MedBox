@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #68004b;
+        opacity: .3;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #68004b;
+        stroke-miterlimit: 10;
+        stroke-width: 3px;
+      }
+
+      .cls-3 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <path class="cls-1" d="M20,20v60h60V20H20ZM68,68H32V32h36v36Z"/>
+    <g>
+      <path class="cls-2" d="M20,20v60h60V20H20ZM68,68H32V32h36v36Z"/>
+      <line class="cls-2" x1="32" y1="32" x2="20" y2="20"/>
+      <line class="cls-2" x1="68" y1="32" x2="80" y2="20"/>
+      <line class="cls-2" x1="80" y1="80" x2="68" y2="68"/>
+      <line class="cls-2" x1="20" y1="80" x2="32" y2="68"/>
+    </g>
+  </g>
+</svg>

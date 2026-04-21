@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #68004b;
+        stroke-width: 5px;
+      }
+
+      .cls-3 {
+        fill: #68004b;
+      }
+
+      .cls-2 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <path class="cls-3" d="M64.7,58.93l-12.18-24.36c-.48-.96-1.45-1.56-2.52-1.56h0c-1.07-.01-2.04.6-2.52,1.55l-12.18,24.36c-.7,1.39-.14,3.07,1.25,3.77,1.39.7,3.08.14,3.77-1.25l2.04-4.06h15.28l2.04,4.08c.69,1.38,2.39,1.94,3.77,1.25,1.38-.69,1.94-2.38,1.25-3.77ZM45.18,51.75l4.83-9.64,4.81,9.64h-9.64Z"/>
+    <circle class="cls-2" cx="50" cy="50" r="27.5"/>
+    <g>
+      <polyline class="cls-1" points="81.26 29.09 81.26 18.74 70.91 18.74"/>
+      <line class="cls-1" x1="81.26" y1="18.74" x2="69.45" y2="30.55"/>
+    </g>
+  </g>
+</svg>

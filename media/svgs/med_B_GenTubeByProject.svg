@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1, .cls-3 {
+        stroke: #68004b;
+        stroke-width: 3px;
+      }
+
+      .cls-4 {
+        fill: #68004b;
+        opacity: .3;
+      }
+
+      .cls-3 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <g>
+      <polyline class="cls-3" points="33.65 41.21 23.32 30.87 13 41.2"/>
+      <line class="cls-3" x1="23.32" y1="30.87" x2="23.33" y2="69.13"/>
+    </g>
+    <g>
+      <polygon class="cls-2" points="76.85 19.69 76.85 73.58 53.52 87.05 53.52 33.16 65.18 26.42 76.85 19.69"/>
+      <polygon class="cls-4" points="53.52 33.16 53.52 87.05 41.85 80.31 41.85 26.42 53.52 33.16"/>
+      <polygon class="cls-4" points="76.85 19.69 65.18 26.42 65.18 12.95 76.85 19.69"/>
+      <polygon class="cls-4" points="65.18 12.95 65.18 26.42 53.52 33.16 41.85 26.42 65.18 12.95"/>
+      <g>
+        <polygon class="cls-1" points="76.85 19.69 76.85 73.58 53.52 87.05 53.52 33.16 65.18 26.42 76.85 19.69"/>
+        <polygon class="cls-1" points="53.52 33.16 53.52 87.05 41.85 80.31 41.85 26.42 53.52 33.16"/>
+        <polygon class="cls-1" points="76.85 19.69 65.18 26.42 65.18 12.95 76.85 19.69"/>
+        <polygon class="cls-1" points="65.18 12.95 65.18 26.42 53.52 33.16 41.85 26.42 65.18 12.95"/>
+      </g>
+    </g>
+  </g>
+</svg>

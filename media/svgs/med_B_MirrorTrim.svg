@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        opacity: .3;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #68004b;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #68004b;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-4 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-4" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <g>
+      <polygon class="cls-3" points="47.52 58.76 47.52 23.73 12.5 58.76 30.01 76.27 47.52 58.76"/>
+      <path class="cls-2" d="M44.52,30.98v26.54l-14.51,14.51-13.27-13.27,27.78-27.78M47.52,23.73L12.5,58.76l17.51,17.51,17.51-17.51V23.73h0Z"/>
+      <polygon class="cls-1" points="47.52 58.76 47.52 23.73 12.5 58.76 30.01 76.27 47.52 58.76"/>
+    </g>
+    <g>
+      <polygon class="cls-3" points="52.48 58.76 52.48 23.73 87.5 58.76 69.99 76.27 52.48 58.76"/>
+      <path class="cls-2" d="M55.48,30.98l27.78,27.78-13.27,13.27-14.51-14.51v-26.54M52.48,23.73v35.02l17.51,17.51,17.51-17.51L52.48,23.73h0Z"/>
+    </g>
+  </g>
+</svg>

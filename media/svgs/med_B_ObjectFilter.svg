@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #68004b;
+      }
+
+      .cls-2 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <path class="cls-1" d="M43.12,70.47v-10.31l-20.62-24.06v-6.87h55v6.87l-20.62,24.06v20.62l-13.75-10.31Z"/>
+</svg>

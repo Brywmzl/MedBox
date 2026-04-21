@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #68004b;
+      }
+
+      .cls-2 {
+        opacity: .6;
+      }
+
+      .cls-3 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-3" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <polygon class="cls-2" points="39.75 39.22 60.78 60.25 45.97 84.5 29.21 67.74 31.75 60.12 24.13 62.66 15.5 54.03 39.75 39.22"/>
+    <polygon class="cls-1" points="57.14 36.77 74.41 19.5 80.5 25.59 63.23 42.86 68.31 47.94 63.51 55.8 44.2 36.49 52.06 31.69 57.14 36.77"/>
+  </g>
+</svg>

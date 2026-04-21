@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fafafa;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #68004b;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <line class="cls-2" x1="67.14" y1="80" x2="67.14" y2="20"/>
+    <line class="cls-2" x1="32.86" y1="20" x2="32.86" y2="80"/>
+    <line class="cls-2" x1="20" y1="67.14" x2="80" y2="67.14"/>
+    <line class="cls-2" x1="20" y1="32.86" x2="80" y2="32.86"/>
+  </g>
+</svg>

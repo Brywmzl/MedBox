@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #68004b;
+      }
+
+      .cls-2 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <path class="cls-1" d="M82.5,50c0,17.95-14.55,32.5-32.5,32.5-17.95,0-32.5-14.55-32.5-32.5s14.55-32.5,32.5-32.5,32.5,14.55,32.5,32.5Z"/>
+    <path class="cls-2" d="M38.17,46.14v-7.86l11.36-6.29h6.64v36h-8.58v-27.01l-9.42,5.16Z"/>
+  </g>
+</svg>

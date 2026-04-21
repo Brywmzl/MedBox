@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #68004b;
+      }
+
+      .cls-2 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-2" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <path class="cls-1" d="M17.5,24v52h65V24H17.5ZM39.17,32.67h8.67v8.67h-8.67v-8.67ZM39.17,45.67h8.67v8.67h-8.67v-8.67ZM34.83,67.33h-8.67v-8.67h8.67v8.67ZM34.83,54.33h-8.67v-8.67h8.67v8.67ZM34.83,41.33h-8.67v-8.67h8.67v8.67ZM60.83,67.33h-21.67v-8.67h21.67v8.67ZM60.83,54.33h-8.67v-8.67h8.67v8.67ZM60.83,41.33h-8.67v-8.67h8.67v8.67ZM73.83,67.33h-8.67v-8.67h8.67v8.67ZM73.83,54.33h-8.67v-8.67h8.67v8.67ZM73.83,41.33h-8.67v-8.67h8.67v8.67Z"/>
+</svg>

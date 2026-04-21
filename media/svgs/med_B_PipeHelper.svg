@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="light" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #68004b;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        opacity: .3;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #68004b;
+      }
+
+      .cls-4 {
+        opacity: .6;
+      }
+
+      .cls-5 {
+        fill: #fafafa;
+      }
+    </style>
+  </defs>
+  <rect class="cls-5" x="5" y="5" width="90" height="90" rx="16" ry="16"/>
+  <g>
+    <g>
+      <polygon class="cls-3" points="44.58 63.5 44.58 88.5 33.76 82.25 33.76 69.75 44.58 63.5"/>
+      <polygon class="cls-3" points="33.76 44.75 33.76 57.26 22.94 63.5 22.94 38.51 33.76 44.75"/>
+      <polygon class="cls-2" points="77.06 19.76 77.06 44.75 66.24 51 44.58 63.5 33.76 69.75 33.76 44.75 77.06 19.76"/>
+      <polygon class="cls-3" points="77.06 19.76 33.76 44.75 22.94 38.51 66.24 13.5 77.06 19.76"/>
+      <polygon class="cls-4" points="33.76 57.26 33.76 69.75 22.94 63.5 33.76 57.26"/>
+      <polygon class="cls-2" points="66.24 51 66.24 76 44.58 88.5 44.58 63.5 66.24 51"/>
+    </g>
+    <g>
+      <line class="cls-1" x1="33.76" y1="69.75" x2="33.76" y2="82.25"/>
+      <line class="cls-1" x1="77.06" y1="19.75" x2="33.76" y2="44.75"/>
+      <line class="cls-1" x1="22.94" y1="38.5" x2="22.94" y2="63.5"/>
+      <line class="cls-1" x1="22.94" y1="38.5" x2="33.76" y2="44.75"/>
+      <line class="cls-1" x1="66.24" y1="13.5" x2="22.94" y2="38.5"/>
+      <line class="cls-1" x1="77.06" y1="44.75" x2="77.06" y2="19.75"/>
+      <line class="cls-1" x1="66.24" y1="13.5" x2="77.06" y2="19.75"/>
+      <line class="cls-1" x1="22.94" y1="63.5" x2="33.76" y2="69.75"/>
+      <line class="cls-1" x1="22.94" y1="63.5" x2="33.76" y2="57.25"/>
+      <line class="cls-1" x1="66.24" y1="76" x2="66.24" y2="51"/>
+      <line class="cls-1" x1="44.59" y1="88.5" x2="66.24" y2="76"/>
+      <line class="cls-1" x1="44.59" y1="63.5" x2="44.59" y2="88.5"/>
+      <line class="cls-1" x1="33.76" y1="82.25" x2="44.59" y2="88.5"/>
+      <polyline class="cls-1" points="33.76 44.75 33.76 69.75 77.06 44.75"/>
+    </g>
+  </g>
+</svg>
